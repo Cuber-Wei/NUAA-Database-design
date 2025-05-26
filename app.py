@@ -12,7 +12,7 @@ app.secret_key = 'your_secret_key_here'  # 请更换为更安全的密钥
 DB_CONFIG = {
     'host': 'localhost',
     'user': 'root',
-    'password': 'Wei-040618',  # 请填入你的MySQL密码
+    'password': '123456',  # 请填入你的MySQL密码
     'database': 'wishes_db',
     'charset': 'utf8mb4',
     'cursorclass': pymysql.cursors.DictCursor
@@ -28,50 +28,23 @@ def get_db_connection():
         return None
 
 def init_db():
-    """初始化数据库，插入测试数据"""
+    """初始化数据库表结构"""
     connection = get_db_connection()
     if not connection:
         return False
     
     try:
         with connection.cursor() as cursor:
-            # 检查是否已有数据
-            cursor.execute("SELECT COUNT(*) as count FROM characters")
-            char_count = cursor.fetchone()['count']
+            # 检查数据库表是否存在，如果不存在则创建
+            cursor.execute("SHOW TABLES LIKE 'characters'")
+            if not cursor.fetchone():
+                print("数据库表不存在，请先运行 db.sql 创建表结构")
+                return False
             
-            if char_count == 0:
-                # 插入角色数据
-                characters = [
-                    (1, '稀罕', 3), (2, '安柏', 4), (3, '凯亚', 4),
-                    (4, '迪卢克', 5), (5, '温迪', 5), (6, '钟离', 5),
-                    (7, '芭芭拉', 4), (8, '香菱', 4), (9, '北斗', 4),
-                    (10, '胡桃', 5), (11, '枫原万叶', 5), (12, '雷电将军', 5)
-                ]
-                
-                cursor.executemany(
-                    "INSERT INTO characters (Cno, Cname, Grade) VALUES (%s, %s, %s)",
-                    characters
-                )
-                
-                # 插入武器数据
-                weapons = [
-                    (1, '铁剑', 3), (2, '白铁大剑', 3), (3, '猎弓', 3),
-                    (4, '祭礼剑', 4), (5, '西风剑', 4), (6, '黑剑', 4),
-                    (7, '狼的末路', 5), (8, '天空之傲', 5), (9, '护摩之杖', 5),
-                    (10, '阿莫斯之弓', 5), (11, '风鹰剑', 5), (12, '磐岩结绿', 5)
-                ]
-                
-                cursor.executemany(
-                    "INSERT INTO weapons (Wno, Wname, Grade) VALUES (%s, %s, %s)",
-                    weapons
-                )
-                
-                connection.commit()
-                print("测试数据初始化完成")
+            print("数据库表结构检查完成")
                 
     except Exception as e:
-        print(f"初始化数据库失败: {e}")
-        connection.rollback()
+        print(f"检查数据库失败: {e}")
         return False
     finally:
         connection.close()
@@ -272,6 +245,21 @@ def wish():
         
         try:
             with connection.cursor() as cursor:
+                # 获取用户当前保底计数
+                cursor.execute("""
+                    SELECT character_4star_pity, weapon_4star_pity, 
+                           character_5star_pity, weapon_5star_pity 
+                    FROM users WHERE Uno = %s
+                """, (session['user_id'],))
+                user_pity = cursor.fetchone()
+                
+                if pool_type == 'character':
+                    current_4star_pity = user_pity['character_4star_pity']
+                    current_5star_pity = user_pity['character_5star_pity']
+                else:
+                    current_4star_pity = user_pity['weapon_4star_pity']
+                    current_5star_pity = user_pity['weapon_5star_pity']
+                
                 # 获取卡池数据
                 if pool_type == 'character':
                     cursor.execute("SELECT Cno, Cname, Grade FROM characters ORDER BY Grade, RAND()")
@@ -280,20 +268,62 @@ def wish():
                     cursor.execute("SELECT Wno, Wname, Grade FROM weapons ORDER BY Grade, RAND()")
                     pool_items = cursor.fetchall()
                 
-                for _ in range(wish_count):
-                    # 抽卡概率设置
-                    rand = random.random()
-                    if rand < 0.006:  # 0.6% 概率抽到5星
-                        target_grade = 5
-                    elif rand < 0.057:  # 5.1% 概率抽到4星
-                        target_grade = 4
-                    else:  # 其余为3星
-                        target_grade = 3
+                for i in range(wish_count):
+                    # 更新保底计数
+                    current_4star_pity += 1
+                    current_5star_pity += 1
                     
-                    # 从对应星级中随机选择
-                    grade_items = [item for item in pool_items if item['Grade'] == target_grade]
+                    # 保底机制：80次必出5星，10次必出4星
+                    if current_5star_pity >= 80:
+                        target_grade = 5
+                        current_5star_pity = 0  # 重置5星保底
+                        current_4star_pity = 0  # 5星也重置4星保底
+                    elif current_4star_pity >= 10:
+                        target_grade = 4
+                        current_4star_pity = 0  # 重置4星保底
+                    else:
+                        # 正常概率抽卡
+                        rand = random.random()
+                        if rand < 0.006:  # 0.6% 概率抽到5星
+                            target_grade = 5
+                            current_5star_pity = 0  # 重置5星保底
+                            current_4star_pity = 0  # 5星也重置4星保底
+                        elif rand < 0.057:  # 5.1% 概率抽到4星
+                            target_grade = 4
+                            current_4star_pity = 0  # 重置4星保底
+                        else:  # 其余为3星
+                            target_grade = 3
+                    
+                    # 根据卡池类型和星级选择物品
+                    if pool_type == 'character':
+                        # 角色卡池逻辑
+                        if target_grade == 5:
+                            # 5星只出角色
+                            grade_items = [item for item in pool_items if item['Grade'] == 5]
+                        elif target_grade == 4:
+                            # 4星可以出角色或武器 (70%角色, 30%武器)
+                            if random.random() < 0.7:
+                                grade_items = [item for item in pool_items if item['Grade'] == 4]
+                            else:
+                                # 获取4星武器
+                                cursor.execute("SELECT Wno, Wname, Grade FROM weapons WHERE Grade = 4")
+                                weapon_items = cursor.fetchall()
+                                grade_items = weapon_items
+                        else:  # target_grade == 3
+                            # 3星出武器（因为角色池没有3星角色）
+                            cursor.execute("SELECT Wno, Wname, Grade FROM weapons WHERE Grade <= 3")
+                            weapon_items = cursor.fetchall()
+                            grade_items = weapon_items
+                    else:
+                        # 武器卡池逻辑：只出武器
+                        grade_items = [item for item in pool_items if item['Grade'] == target_grade]
+                        if not grade_items and target_grade == 3:
+                            # 如果没有3星武器，选择1-2星武器
+                            grade_items = [item for item in pool_items if item['Grade'] <= 3]
+                    
+                    # 确保有可选物品
                     if not grade_items:
-                        grade_items = pool_items  # 如果没有对应星级，则从全部中选择
+                        grade_items = pool_items
                     
                     selected_item = random.choice(grade_items)
                     
@@ -303,10 +333,13 @@ def wish():
                     
                     # 插入抽卡记录
                     now = datetime.datetime.now()
-                    if pool_type == 'character':
+                    
+                    # 判断抽到的是角色还是武器
+                    if 'Cno' in selected_item:
+                        # 抽到角色
                         cursor.execute("""
                             INSERT INTO wishes (Wno, Wuser, Wtype, Wcharacter, Wweapon, Wtime)
-                            VALUES (%s, %s, 0, %s, 0, %s)
+                            VALUES (%s, %s, 0, %s, NULL, %s)
                         """, (wish_id, session['user_id'], selected_item['Cno'], now))
                         results.append({
                             'type': 'character',
@@ -314,9 +347,10 @@ def wish():
                             'grade': selected_item['Grade']
                         })
                     else:
+                        # 抽到武器
                         cursor.execute("""
                             INSERT INTO wishes (Wno, Wuser, Wtype, Wcharacter, Wweapon, Wtime)
-                            VALUES (%s, %s, 1, 0, %s, %s)
+                            VALUES (%s, %s, 1, NULL, %s, %s)
                         """, (wish_id, session['user_id'], selected_item['Wno'], now))
                         results.append({
                             'type': 'weapon',
@@ -324,10 +358,34 @@ def wish():
                             'grade': selected_item['Grade']
                         })
                 
+                # 更新用户保底计数
+                if pool_type == 'character':
+                    cursor.execute("""
+                        UPDATE users 
+                        SET character_4star_pity = %s, character_5star_pity = %s 
+                        WHERE Uno = %s
+                    """, (current_4star_pity, current_5star_pity, session['user_id']))
+                else:
+                    cursor.execute("""
+                        UPDATE users 
+                        SET weapon_4star_pity = %s, weapon_5star_pity = %s 
+                        WHERE Uno = %s
+                    """, (current_4star_pity, current_5star_pity, session['user_id']))
+                
                 connection.commit()
+                
+                # 添加保底信息到返回结果
+                pity_info = {
+                    'current_4star_pity': current_4star_pity,
+                    'current_5star_pity': current_5star_pity,
+                    'next_4star_guarantee': 10 - current_4star_pity,
+                    'next_5star_guarantee': 80 - current_5star_pity
+                }
+                
                 return jsonify({
                     'success': True,
                     'results': results,
+                    'pity_info': pity_info,
                     'message': f'抽卡成功！获得{len(results)}个道具'
                 })
                 
@@ -338,6 +396,51 @@ def wish():
             connection.close()
     
     return render_template('wish.html')
+
+@app.route('/get_pity_info')
+@login_required
+def get_pity_info():
+    """获取用户保底信息"""
+    connection = get_db_connection()
+    if not connection:
+        return jsonify({'success': False, 'message': '数据库连接失败'})
+    
+    try:
+        with connection.cursor() as cursor:
+            cursor.execute("""
+                SELECT character_4star_pity, weapon_4star_pity, 
+                       character_5star_pity, weapon_5star_pity 
+                FROM users WHERE Uno = %s
+            """, (session['user_id'],))
+            user_pity = cursor.fetchone()
+            
+            if user_pity:
+                pity_info = {
+                    'character': {
+                        'current_4star_pity': user_pity['character_4star_pity'],
+                        'current_5star_pity': user_pity['character_5star_pity'],
+                        'next_4star_guarantee': 10 - user_pity['character_4star_pity'],
+                        'next_5star_guarantee': 80 - user_pity['character_5star_pity']
+                    },
+                    'weapon': {
+                        'current_4star_pity': user_pity['weapon_4star_pity'],
+                        'current_5star_pity': user_pity['weapon_5star_pity'],
+                        'next_4star_guarantee': 10 - user_pity['weapon_4star_pity'],
+                        'next_5star_guarantee': 80 - user_pity['weapon_5star_pity']
+                    }
+                }
+                
+                return jsonify({
+                    'success': True,
+                    'pity_info': pity_info
+                })
+            else:
+                return jsonify({'success': False, 'message': '用户信息不存在'})
+                
+    except Exception as e:
+        return jsonify({'success': False, 'message': f'获取保底信息失败: {str(e)}'})
+    finally:
+        connection.close()
 
 @app.route('/history')
 @login_required

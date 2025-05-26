@@ -22,12 +22,12 @@
                         <div class="col-md-6">
                             <label class="form-label">卡池类型</label>
                             <div class="d-grid gap-2">
-                                <input type="radio" class="btn-check" name="pool_type" id="pool_character" value="character" checked>
+                                <input type="radio" class="btn-check" name="pool_type" id="pool_character" value="character" checked onchange="updatePityDisplay()">
                                 <label class="btn btn-outline-success" for="pool_character">
                                     <i class="bi bi-people-fill"></i> 角色卡池
                                 </label>
                                 
-                                <input type="radio" class="btn-check" name="pool_type" id="pool_weapon" value="weapon">
+                                <input type="radio" class="btn-check" name="pool_type" id="pool_weapon" value="weapon" onchange="updatePityDisplay()">
                                 <label class="btn btn-outline-danger" for="pool_weapon">
                                     <i class="bi bi-sword"></i> 武器卡池
                                 </label>
@@ -64,8 +64,32 @@
                     <i class="bi bi-question-circle display-1 mb-3"></i>
                     <p>选择卡池和抽卡方式开始抽卡</p>
                     <small class="text-muted">
-                        概率说明：5星道具 0.6% | 4星道具 5.1% | 3星道具 94.3%
+                        概率说明：5星道具 0.6% | 4星道具 5.1% | 3星道具 94.3%<br>
+                        保底机制：10次必出4星 | 80次必出5星<br>
+                        角色池：5星必出角色，4星70%角色30%武器，3星出武器
                     </small>
+                </div>
+                
+                <!-- 保底信息显示 -->
+                <div id="pityInfo" class="mt-3" style="display: none;">
+                    <div class="row text-center">
+                        <div class="col-6">
+                            <div class="card bg-light">
+                                <div class="card-body py-2">
+                                    <small class="text-muted">距离4星保底</small>
+                                    <div id="pity4star" class="h5 mb-0 text-primary">-</div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="card bg-light">
+                                <div class="card-body py-2">
+                                    <small class="text-muted">距离5星保底</small>
+                                    <div id="pity5star" class="h5 mb-0 text-warning">-</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
@@ -89,12 +113,85 @@
 
 {% block scripts %}
 <script>
+// 防止重复点击的标志
+let isWishing = false;
+
+// 全局清理函数，确保清除所有模态框残留
+function forceCleanAllModals() {
+    // 移除所有模态框相关的类和样式
+    document.body.classList.remove('modal-open');
+    document.body.style.overflow = '';
+    document.body.style.paddingRight = '';
+    
+    // 移除所有backdrop
+    const backdrops = document.querySelectorAll('.modal-backdrop');
+    backdrops.forEach(backdrop => backdrop.remove());
+    
+    // 隐藏所有模态框
+    const modals = document.querySelectorAll('.modal');
+    modals.forEach(modal => {
+        modal.style.display = 'none';
+        modal.classList.remove('show');
+        modal.setAttribute('aria-hidden', 'true');
+        modal.removeAttribute('aria-modal');
+    });
+    
+    // 重置抽卡状态
+    isWishing = false;
+    
+    // 重新启用所有抽卡按钮
+    const wishButtons = document.querySelectorAll('button[onclick^="makeWish"]');
+    wishButtons.forEach(btn => {
+        btn.disabled = false;
+        btn.classList.remove('disabled');
+    });
+}
+
 function makeWish(wishType) {
+    // 防止重复点击
+    if (isWishing) {
+        return;
+    }
+    
+    isWishing = true;
     const poolType = document.querySelector('input[name="pool_type"]:checked').value;
     
+    // 禁用所有抽卡按钮
+    const wishButtons = document.querySelectorAll('button[onclick^="makeWish"]');
+    wishButtons.forEach(btn => {
+        btn.disabled = true;
+        btn.classList.add('disabled');
+    });
+    
+    // 获取模态框元素
+    const modalElement = document.getElementById('wishModal');
+    const modal = new bootstrap.Modal(modalElement);
+    
     // 显示加载模态框
-    const modal = new bootstrap.Modal(document.getElementById('wishModal'));
     modal.show();
+    
+    // 定义隐藏模态框的函数
+    function hideModalAndExecute(callback) {
+        // 尝试正常隐藏模态框
+        try {
+            modal.hide();
+        } catch (e) {
+            console.warn('Modal hide failed:', e);
+        }
+        
+        // 立即强制清理
+        forceCleanAllModals();
+        
+        // 设置多个备份清理，确保万无一失
+        setTimeout(forceCleanAllModals, 50);
+        setTimeout(forceCleanAllModals, 200);
+        setTimeout(forceCleanAllModals, 500);
+        
+        // 执行回调函数
+        if (callback) {
+            setTimeout(callback, 100);
+        }
+    }
     
     // 发送抽卡请求
     fetch('{{ url_for("wish") }}', {
@@ -106,18 +203,28 @@ function makeWish(wishType) {
     })
     .then(response => response.json())
     .then(data => {
-        modal.hide();
-        
-        if (data.success) {
-            displayWishResults(data.results);
-        } else {
-            alert('抽卡失败: ' + data.message);
-        }
+        hideModalAndExecute(() => {
+            if (data.success) {
+                displayWishResults(data.results);
+                
+                // 更新全局保底信息
+                if (data.pity_info) {
+                    const poolType = document.querySelector('input[name="pool_type"]:checked').value;
+                    if (globalPityInfo) {
+                        globalPityInfo[poolType] = data.pity_info;
+                    }
+                    updatePityInfo(data.pity_info);
+                }
+            } else {
+                alert('抽卡失败: ' + data.message);
+            }
+        });
     })
     .catch(error => {
-        modal.hide();
-        alert('网络错误，请重试');
-        console.error('Error:', error);
+        hideModalAndExecute(() => {
+            alert('网络错误，请重试');
+            console.error('Error:', error);
+        });
     });
 }
 
@@ -193,5 +300,100 @@ function displayWishResults(results) {
         });
     }, 100);
 }
+
+function updatePityInfo(pityInfo) {
+    if (pityInfo) {
+        const pityInfoDiv = document.getElementById('pityInfo');
+        const pity4star = document.getElementById('pity4star');
+        const pity5star = document.getElementById('pity5star');
+        
+        pity4star.textContent = pityInfo.next_4star_guarantee + ' 次';
+        pity5star.textContent = pityInfo.next_5star_guarantee + ' 次';
+        
+        // 显示保底信息
+        pityInfoDiv.style.display = 'block';
+        
+        // 根据保底接近程度改变颜色
+        if (pityInfo.next_4star_guarantee <= 3) {
+            pity4star.className = 'h5 mb-0 text-danger';
+        } else if (pityInfo.next_4star_guarantee <= 5) {
+            pity4star.className = 'h5 mb-0 text-warning';
+        } else {
+            pity4star.className = 'h5 mb-0 text-primary';
+        }
+        
+        if (pityInfo.next_5star_guarantee <= 10) {
+            pity5star.className = 'h5 mb-0 text-danger';
+        } else if (pityInfo.next_5star_guarantee <= 20) {
+            pity5star.className = 'h5 mb-0 text-warning';
+        } else {
+            pity5star.className = 'h5 mb-0 text-warning';
+        }
+    }
+}
+
+// 页面加载完成后立即清理可能残留的模态框
+document.addEventListener('DOMContentLoaded', function() {
+    forceCleanAllModals();
+    loadPityInfo();
+});
+
+// 全局保底信息存储
+let globalPityInfo = null;
+
+// 加载保底信息
+function loadPityInfo() {
+    fetch('{{ url_for("get_pity_info") }}', {
+        method: 'GET'
+    })
+    .then(response => response.json())
+    .then(data => {
+        if (data.success) {
+            globalPityInfo = data.pity_info;
+            updatePityDisplay();
+        }
+    })
+    .catch(error => {
+        console.log('获取保底信息失败:', error);
+    });
+}
+
+// 根据选择的卡池更新保底显示
+function updatePityDisplay() {
+    if (!globalPityInfo) return;
+    
+    const poolType = document.querySelector('input[name="pool_type"]:checked').value;
+    const currentPityInfo = globalPityInfo[poolType];
+    
+    if (currentPityInfo) {
+        updatePityInfo(currentPityInfo);
+    }
+}
+
+// 页面显示时也清理一次（处理浏览器前进后退）
+window.addEventListener('pageshow', function() {
+    forceCleanAllModals();
+});
+
+// 监听ESC键，允许用户手动关闭模态框
+document.addEventListener('keydown', function(event) {
+    if (event.key === 'Escape') {
+        forceCleanAllModals();
+    }
+});
+
+// 定期检查并清理可能残留的模态框（每2秒检查一次）
+setInterval(function() {
+    // 检查是否有残留的backdrop或显示的模态框
+    const hasBackdrop = document.querySelector('.modal-backdrop');
+    const hasOpenModal = document.querySelector('.modal.show');
+    const bodyHasModalOpen = document.body.classList.contains('modal-open');
+    
+    // 如果检测到残留且当前没有正在进行的抽卡操作，则清理
+    if ((hasBackdrop || hasOpenModal || bodyHasModalOpen) && !isWishing) {
+        console.log('检测到模态框残留，自动清理...');
+        forceCleanAllModals();
+    }
+}, 2000);
 </script>
 {% endblock %} 

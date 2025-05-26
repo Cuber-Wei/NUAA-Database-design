@@ -28,6 +28,10 @@ create table if not exists users
     Uno bigint primary key comment "用户号",
     Uname varchar(20) not null comment "用户名",
     Upassword varchar(64) not null comment "密码（md5）",
+    character_4star_pity int default 0 comment "角色卡池4星保底计数",
+    weapon_4star_pity int default 0 comment "武器卡池4星保底计数",
+    character_5star_pity int default 0 comment "角色卡池5星保底计数",
+    weapon_5star_pity int default 0 comment "武器卡池5星保底计数",
     index idx_uname (Uname)
 ) comment "用户" collate = utf8mb4_unicode_ci;
 
@@ -37,8 +41,8 @@ create table if not exists wishes
     Wno bigint primary key comment "抽卡记录ID",
     Wuser bigint not null comment "抽卡记录用户ID",
     Wtype tinyint not null comment "抽卡记录类型（0：角色，1：武器）",
-    Wcharacter bigint not null comment "抽卡记录角色ID",
-    Wweapon bigint not null comment "抽卡记录武器ID",
+    Wcharacter bigint null comment "抽卡记录角色ID",
+    Wweapon bigint null comment "抽卡记录武器ID",
     Wtime datetime not null comment "抽卡记录时间",
     index idx_wuser (Wuser),
     index idx_wtype (Wtype),
