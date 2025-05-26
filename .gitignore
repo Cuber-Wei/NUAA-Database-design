@@ -63,6 +63,7 @@ Thumbs.db
 # 日志文件
 *.log
 logs/
+security.log
 
 # 数据库
 *.db

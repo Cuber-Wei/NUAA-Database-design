@@ -5,6 +5,17 @@ import random
 import datetime
 from functools import wraps
 
+# 导入安全模块
+from security import (
+    SQLInjectionProtector, 
+    SecureDatabase,
+    sql_injection_protection,
+    validate_user_input,
+    validate_wish_params,
+    validate_pagination_params,
+    log_security_event
+)
+
 app = Flask(__name__)
 app.secret_key = 'your_secret_key_here'  # 请更换为更安全的密钥
 
@@ -17,6 +28,9 @@ DB_CONFIG = {
     'charset': 'utf8mb4',
     'cursorclass': pymysql.cursors.DictCursor
 }
+
+# 初始化安全数据库实例
+secure_db = SecureDatabase(DB_CONFIG)
 
 def get_db_connection():
     """获取数据库连接"""
@@ -73,6 +87,7 @@ def index():
     return render_template('index.html')
 
 @app.route('/register', methods=['GET', 'POST'])
+@sql_injection_protection
 def register():
     """用户注册"""
     if request.method == 'POST':
@@ -80,18 +95,22 @@ def register():
         password = request.form.get('password', '')
         confirm_password = request.form.get('confirm_password', '')
         
-        # 表单验证
-        if not username or not password:
-            flash('用户名和密码不能为空', 'error')
+        # 使用安全验证
+        validation_result = validate_user_input(username, password)
+        if not validation_result['valid']:
+            for error in validation_result['errors']:
+                flash(error, 'error')
+            log_security_event('INVALID_INPUT', f'Registration attempt with invalid input: {username}')
             return render_template('register.html')
         
+        # 验证密码确认
         if password != confirm_password:
             flash('两次输入的密码不一致', 'error')
             return render_template('register.html')
-            
-        if len(username) > 20 or len(password) > 20:
-            flash('用户名和密码长度不能超过20个字符', 'error')
-            return render_template('register.html')
+        
+        # 使用验证后的安全数据
+        safe_username = validation_result['username']
+        safe_password = validation_result['password']
         
         connection = get_db_connection()
         if not connection:
@@ -101,9 +120,10 @@ def register():
         try:
             with connection.cursor() as cursor:
                 # 检查用户名是否已存在
-                cursor.execute("SELECT Uno FROM users WHERE Uname = %s", (username,))
+                cursor.execute("SELECT Uno FROM users WHERE Uname = %s", (safe_username,))
                 if cursor.fetchone():
                     flash('用户名已存在', 'error')
+                    log_security_event('DUPLICATE_USERNAME', f'Registration attempt with existing username: {safe_username}')
                     return render_template('register.html')
                 
                 # 生成用户ID
@@ -111,13 +131,14 @@ def register():
                 user_id = cursor.fetchone()['next_id']
                 
                 # 插入新用户
-                encrypted_password = md5_encrypt(password)
+                encrypted_password = md5_encrypt(safe_password)
                 cursor.execute(
                     "INSERT INTO users (Uno, Uname, Upassword) VALUES (%s, %s, %s)",
-                    (user_id, username, encrypted_password)
+                    (user_id, safe_username, encrypted_password)
                 )
                 connection.commit()
                 
+                log_security_event('USER_REGISTERED', f'New user registered: {safe_username}', user_id)
                 flash('注册成功，请登录', 'success')
                 return redirect(url_for('login'))
                 
@@ -130,15 +151,24 @@ def register():
     return render_template('register.html')
 
 @app.route('/login', methods=['GET', 'POST'])
+@sql_injection_protection
 def login():
     """用户登录"""
     if request.method == 'POST':
         username = request.form.get('username', '').strip()
         password = request.form.get('password', '')
         
-        if not username or not password:
-            flash('用户名和密码不能为空', 'error')
+        # 使用安全验证
+        validation_result = validate_user_input(username, password)
+        if not validation_result['valid']:
+            for error in validation_result['errors']:
+                flash(error, 'error')
+            log_security_event('INVALID_LOGIN_INPUT', f'Login attempt with invalid input: {username}')
             return render_template('login.html')
+        
+        # 使用验证后的安全数据
+        safe_username = validation_result['username']
+        safe_password = validation_result['password']
         
         connection = get_db_connection()
         if not connection:
@@ -147,19 +177,21 @@ def login():
         
         try:
             with connection.cursor() as cursor:
-                encrypted_password = md5_encrypt(password)
+                encrypted_password = md5_encrypt(safe_password)
                 cursor.execute(
                     "SELECT Uno, Uname FROM users WHERE Uname = %s AND Upassword = %s",
-                    (username, encrypted_password)
+                    (safe_username, encrypted_password)
                 )
                 user = cursor.fetchone()
                 
                 if user:
                     session['user_id'] = user['Uno']
                     session['username'] = user['Uname']
+                    log_security_event('USER_LOGIN', f'User logged in: {safe_username}', user['Uno'])
                     flash('登录成功', 'success')
                     return redirect(url_for('dashboard'))
                 else:
+                    log_security_event('LOGIN_FAILED', f'Failed login attempt for username: {safe_username}')
                     flash('用户名或密码错误', 'error')
                     
         except Exception as e:
@@ -266,16 +298,24 @@ def dashboard():
 
 @app.route('/wish', methods=['GET', 'POST'])
 @login_required
+@sql_injection_protection
 def wish():
     """抽卡页面"""
     if request.method == 'POST':
         wish_type = request.form.get('wish_type')  # 'single' or 'ten'
         pool_type = request.form.get('pool_type')  # 'character' or 'weapon'
         
-        if wish_type not in ['single', 'ten'] or pool_type not in ['character', 'weapon']:
+        # 使用安全验证
+        validation_result = validate_wish_params(wish_type, pool_type)
+        if not validation_result['valid']:
+            log_security_event('INVALID_WISH_PARAMS', f'Invalid wish parameters: {wish_type}, {pool_type}', session.get('user_id'))
             return jsonify({'success': False, 'message': '参数错误'})
         
-        wish_count = 1 if wish_type == 'single' else 10
+        # 使用验证后的安全参数
+        safe_wish_type = validation_result['wish_type']
+        safe_pool_type = validation_result['pool_type']
+        
+        wish_count = 1 if safe_wish_type == 'single' else 10
         results = []
         
         connection = get_db_connection()
@@ -292,7 +332,7 @@ def wish():
                 """, (session['user_id'],))
                 user_pity = cursor.fetchone()
                 
-                if pool_type == 'character':
+                if safe_pool_type == 'character':
                     current_4star_pity = user_pity['character_4star_pity']
                     current_5star_pity = user_pity['character_5star_pity']
                 else:
@@ -300,7 +340,7 @@ def wish():
                     current_5star_pity = user_pity['weapon_5star_pity']
                 
                 # 获取卡池数据
-                if pool_type == 'character':
+                if safe_pool_type == 'character':
                     cursor.execute("SELECT Cno, Cname, Grade FROM characters ORDER BY Grade, RAND()")
                     pool_items = cursor.fetchall()
                 else:
@@ -334,7 +374,7 @@ def wish():
                             target_grade = 3
                     
                     # 根据卡池类型和星级选择物品
-                    if pool_type == 'character':
+                    if safe_pool_type == 'character':
                         # 角色卡池逻辑
                         if target_grade == 5:
                             # 5星只出角色
@@ -398,7 +438,7 @@ def wish():
                         })
                 
                 # 更新用户保底计数
-                if pool_type == 'character':
+                if safe_pool_type == 'character':
                     cursor.execute("""
                         UPDATE users 
                         SET character_4star_pity = %s, character_5star_pity = %s 
@@ -438,6 +478,7 @@ def wish():
 
 @app.route('/get_pity_info')
 @login_required
+@sql_injection_protection
 def get_pity_info():
     """获取用户保底信息"""
     connection = get_db_connection()
@@ -483,11 +524,17 @@ def get_pity_info():
 
 @app.route('/history')
 @login_required
+@sql_injection_protection
 def history():
     """抽卡记录"""
     page = request.args.get('page', 1, type=int)
     per_page = 20
-    offset = (page - 1) * per_page
+    
+    # 使用安全验证分页参数
+    pagination_result = validate_pagination_params(page, per_page)
+    safe_page = pagination_result['page']
+    safe_per_page = pagination_result['per_page']
+    offset = (safe_page - 1) * safe_per_page
     
     connection = get_db_connection()
     if not connection:
@@ -507,7 +554,7 @@ def history():
                 WHERE Wuser = %s
                 ORDER BY Wtime DESC
                 LIMIT %s OFFSET %s
-            """, (session['user_id'], per_page, offset))
+            """, (session['user_id'], safe_per_page, offset))
             wishes_data = cursor.fetchall()
             
             # 批量获取角色和武器信息
@@ -558,9 +605,9 @@ def history():
                     wishes.append(wish_data)
             
             # 计算分页信息
-            total_pages = (total + per_page - 1) // per_page
-            has_prev = page > 1
-            has_next = page < total_pages
+            total_pages = (total + safe_per_page - 1) // safe_per_page
+            has_prev = safe_page > 1
+            has_next = safe_page < total_pages
             
     except Exception as e:
         flash(f'获取抽卡记录失败: {str(e)}', 'error')
@@ -574,7 +621,7 @@ def history():
     
     return render_template('history.html', 
                          wishes=wishes, 
-                         page=page, 
+                         page=safe_page, 
                          total_pages=total_pages,
                          has_prev=has_prev, 
                          has_next=has_next,
