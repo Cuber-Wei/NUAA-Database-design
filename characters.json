@@ -1,0 +1,828 @@
+{
+  "images": [
+    {
+      "name": "无背景-角色-爱可菲.png",
+      "filename": "无背景-角色-爱可菲.png",
+      "storage_path": "items/character/无背景-角色-爱可菲.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/96/mzw51dyxhvnldlzf63eqvuei4rs6ksg.png",
+      "alt_text": "无背景-角色-爱可菲.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-瓦雷莎.png",
+      "filename": "无背景-角色-瓦雷莎.png",
+      "storage_path": "items/character/无背景-角色-瓦雷莎.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/df/923uzs0ddvfnagy7zu9e9zk941dp1wg.png",
+      "alt_text": "无背景-角色-瓦雷莎.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-梦见月瑞希.png",
+      "filename": "无背景-角色-梦见月瑞希.png",
+      "storage_path": "items/character/无背景-角色-梦见月瑞希.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/ff/3o8mr0u4bl7ud05988n9k4fgyqpse60.png",
+      "alt_text": "无背景-角色-梦见月瑞希.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-玛薇卡.png",
+      "filename": "无背景-角色-玛薇卡.png",
+      "storage_path": "items/character/无背景-角色-玛薇卡.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/f2/98s7xgph19fwlwcl9rdw0wxeiix6uj8.png",
+      "alt_text": "无背景-角色-玛薇卡.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-旅行者.png",
+      "filename": "无背景-角色-旅行者.png",
+      "storage_path": "items/character/无背景-角色-旅行者.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/58/qp92ut2iic6699bu9h72reklefh1yb1.png",
+      "alt_text": "无背景-角色-旅行者.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-茜特菈莉.png",
+      "filename": "无背景-角色-茜特菈莉.png",
+      "storage_path": "items/character/无背景-角色-茜特菈莉.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b8/dqg8bmkq6cotszvj0gh4byh3vyc7bwb.png",
+      "alt_text": "无背景-角色-茜特菈莉.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-恰斯卡.png",
+      "filename": "无背景-角色-恰斯卡.png",
+      "storage_path": "items/character/无背景-角色-恰斯卡.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/5d/fbry1sdkvyct1youivlxqv81002lyao.png",
+      "alt_text": "无背景-角色-恰斯卡.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-希诺宁.png",
+      "filename": "无背景-角色-希诺宁.png",
+      "storage_path": "items/character/无背景-角色-希诺宁.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a6/35nazkolfbybwwg2njmcsbr2w2sj8yb.png",
+      "alt_text": "无背景-角色-希诺宁.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-基尼奇.png",
+      "filename": "无背景-角色-基尼奇.png",
+      "storage_path": "items/character/无背景-角色-基尼奇.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/50/k7gyxmsaaju3kjzg0r8k76r8ae85vg5.png",
+      "alt_text": "无背景-角色-基尼奇.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-玛拉妮.png",
+      "filename": "无背景-角色-玛拉妮.png",
+      "storage_path": "items/character/无背景-角色-玛拉妮.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c0/itpnzb7gy571ojwjnkr8936tb6lu0f9.png",
+      "alt_text": "无背景-角色-玛拉妮.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-艾梅莉埃.png",
+      "filename": "无背景-角色-艾梅莉埃.png",
+      "storage_path": "items/character/无背景-角色-艾梅莉埃.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/58/evinc7eeqx31q5hge379bo06kgof306.png",
+      "alt_text": "无背景-角色-艾梅莉埃.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-希格雯.png",
+      "filename": "无背景-角色-希格雯.png",
+      "storage_path": "items/character/无背景-角色-希格雯.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/82/gfby1q35huyeqq0i8nb4z1v5bhethd8.png",
+      "alt_text": "无背景-角色-希格雯.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-克洛琳德.png",
+      "filename": "无背景-角色-克洛琳德.png",
+      "storage_path": "items/character/无背景-角色-克洛琳德.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/2c/edrca2y9y5wvltvmva3ni2cz3c35ffj.png",
+      "alt_text": "无背景-角色-克洛琳德.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-阿蕾奇诺.png",
+      "filename": "无背景-角色-阿蕾奇诺.png",
+      "storage_path": "items/character/无背景-角色-阿蕾奇诺.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/2c/6vhlw45lkuwa9b5aqr86e2bew2ln4jp.png",
+      "alt_text": "无背景-角色-阿蕾奇诺.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-千织.png",
+      "filename": "无背景-角色-千织.png",
+      "storage_path": "items/character/无背景-角色-千织.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a6/4k6rkt55pw85t14akl09o42f800iac7.png",
+      "alt_text": "无背景-角色-千织.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-闲云.png",
+      "filename": "无背景-角色-闲云.png",
+      "storage_path": "items/character/无背景-角色-闲云.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/33/gn836y6qx7kl0rl98wozgx13thi62nq.png",
+      "alt_text": "无背景-角色-闲云.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-娜维娅.png",
+      "filename": "无背景-角色-娜维娅.png",
+      "storage_path": "items/character/无背景-角色-娜维娅.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/04/3bbaccl7ziumc1f9vk1hoo1vpttkd2m.png",
+      "alt_text": "无背景-角色-娜维娅.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-芙宁娜.png",
+      "filename": "无背景-角色-芙宁娜.png",
+      "storage_path": "items/character/无背景-角色-芙宁娜.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c3/pcfz7nh8676dqxxubrshq17jdu17xn9.png",
+      "alt_text": "无背景-角色-芙宁娜.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-莱欧斯利.png",
+      "filename": "无背景-角色-莱欧斯利.png",
+      "storage_path": "items/character/无背景-角色-莱欧斯利.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d7/jvb2oapa38w7k6t4zd9y5x21hex5ku2.png",
+      "alt_text": "无背景-角色-莱欧斯利.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-那维莱特.png",
+      "filename": "无背景-角色-那维莱特.png",
+      "storage_path": "items/character/无背景-角色-那维莱特.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/16/aism1oli44ck26p72n0gv2elnqq1av7.png",
+      "alt_text": "无背景-角色-那维莱特.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-林尼.png",
+      "filename": "无背景-角色-林尼.png",
+      "storage_path": "items/character/无背景-角色-林尼.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d6/tbalaahap33je75krxzg29fmuidcxit.png",
+      "alt_text": "无背景-角色-林尼.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-旅行者.png",
+      "filename": "无背景-角色-旅行者.png",
+      "storage_path": "items/character/无背景-角色-旅行者.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/58/qp92ut2iic6699bu9h72reklefh1yb1.png",
+      "alt_text": "无背景-角色-旅行者.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-白术.png",
+      "filename": "无背景-角色-白术.png",
+      "storage_path": "items/character/无背景-角色-白术.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/22/rkydprgsuw6uaxbm4wotnaj8dw2v30a.png",
+      "alt_text": "无背景-角色-白术.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-迪希雅.png",
+      "filename": "无背景-角色-迪希雅.png",
+      "storage_path": "items/character/无背景-角色-迪希雅.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/ca/n64mnzi2yy03qpzld3in619wijfqyj6.png",
+      "alt_text": "无背景-角色-迪希雅.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-艾尔海森.png",
+      "filename": "无背景-角色-艾尔海森.png",
+      "storage_path": "items/character/无背景-角色-艾尔海森.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/14/nugjaod5qmffz3tbtt8is50d8hf1u5r.png",
+      "alt_text": "无背景-角色-艾尔海森.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-流浪者.png",
+      "filename": "无背景-角色-流浪者.png",
+      "storage_path": "items/character/无背景-角色-流浪者.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c8/ottjnyh4hg2kid1zqfiqlqext5w5v84.png",
+      "alt_text": "无背景-角色-流浪者.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-纳西妲.png",
+      "filename": "无背景-角色-纳西妲.png",
+      "storage_path": "items/character/无背景-角色-纳西妲.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/ba/g5x8lguvxfq0hkv211yfecjdvm0xhe7.png",
+      "alt_text": "无背景-角色-纳西妲.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-妮露.png",
+      "filename": "无背景-角色-妮露.png",
+      "storage_path": "items/character/无背景-角色-妮露.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/92/94sj2gmd3pywnqv7ep9fdn5xrkfxaum.png",
+      "alt_text": "无背景-角色-妮露.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-赛诺.png",
+      "filename": "无背景-角色-赛诺.png",
+      "storage_path": "items/character/无背景-角色-赛诺.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/ca/4yr49hl7qyuzcku5hnjrls2zrswcen5.png",
+      "alt_text": "无背景-角色-赛诺.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-提纳里.png",
+      "filename": "无背景-角色-提纳里.png",
+      "storage_path": "items/character/无背景-角色-提纳里.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/3b/9bq657i9ork1vn2uzv3fpd7p5q8dlqc.png",
+      "alt_text": "无背景-角色-提纳里.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-夜兰.png",
+      "filename": "无背景-角色-夜兰.png",
+      "storage_path": "items/character/无背景-角色-夜兰.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/68/e49y27vv8lhk0a9h199pgc0ramj3dk4.png",
+      "alt_text": "无背景-角色-夜兰.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-神里绫人.png",
+      "filename": "无背景-角色-神里绫人.png",
+      "storage_path": "items/character/无背景-角色-神里绫人.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/f7/sdgu6bh00rod7lypt9l9c9xlxojtjhl.png",
+      "alt_text": "无背景-角色-神里绫人.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-八重神子.png",
+      "filename": "无背景-角色-八重神子.png",
+      "storage_path": "items/character/无背景-角色-八重神子.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e0/0plzsmjpgzzpldn00zqijgfybgx2pac.png",
+      "alt_text": "无背景-角色-八重神子.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-申鹤.png",
+      "filename": "无背景-角色-申鹤.png",
+      "storage_path": "items/character/无背景-角色-申鹤.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/73/793kuoybdf409lnzwevsmd8ipnel1d2.png",
+      "alt_text": "无背景-角色-申鹤.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-荒泷一斗.png",
+      "filename": "无背景-角色-荒泷一斗.png",
+      "storage_path": "items/character/无背景-角色-荒泷一斗.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/0c/5sdwiryq6bjb3tjxxtg1e8njdmggirp.png",
+      "alt_text": "无背景-角色-荒泷一斗.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-珊瑚宫心海.png",
+      "filename": "无背景-角色-珊瑚宫心海.png",
+      "storage_path": "items/character/无背景-角色-珊瑚宫心海.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/49/kyfltllg1qaoki7pwpefy7xh8022duy.png",
+      "alt_text": "无背景-角色-珊瑚宫心海.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-雷电将军.png",
+      "filename": "无背景-角色-雷电将军.png",
+      "storage_path": "items/character/无背景-角色-雷电将军.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a7/e9o4gu6ztf7zytnvvkeoerbevkjfwjr.png",
+      "alt_text": "无背景-角色-雷电将军.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-宵宫.png",
+      "filename": "无背景-角色-宵宫.png",
+      "storage_path": "items/character/无背景-角色-宵宫.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/34/pz347ut911ktapyemd3ewiyx1dwv3te.png",
+      "alt_text": "无背景-角色-宵宫.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-旅行者.png",
+      "filename": "无背景-角色-旅行者.png",
+      "storage_path": "items/character/无背景-角色-旅行者.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/58/qp92ut2iic6699bu9h72reklefh1yb1.png",
+      "alt_text": "无背景-角色-旅行者.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-神里绫华.png",
+      "filename": "无背景-角色-神里绫华.png",
+      "storage_path": "items/character/无背景-角色-神里绫华.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/38/8h931m3f8nkkvjfq3f03c8a9h0f6x69.png",
+      "alt_text": "无背景-角色-神里绫华.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-枫原万叶.png",
+      "filename": "无背景-角色-枫原万叶.png",
+      "storage_path": "items/character/无背景-角色-枫原万叶.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/3a/e1n6v73p785ne6kew41q9snh45zrup2.png",
+      "alt_text": "无背景-角色-枫原万叶.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-优菈.png",
+      "filename": "无背景-角色-优菈.png",
+      "storage_path": "items/character/无背景-角色-优菈.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/86/jf6qfoaq6q48jx6lvqb88dgl4xta141.png",
+      "alt_text": "无背景-角色-优菈.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-胡桃.png",
+      "filename": "无背景-角色-胡桃.png",
+      "storage_path": "items/character/无背景-角色-胡桃.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/2d/6x5q4v3ovlgtd5pk7xlqxjdqv1gvf0a.png",
+      "alt_text": "无背景-角色-胡桃.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-魈.png",
+      "filename": "无背景-角色-魈.png",
+      "storage_path": "items/character/无背景-角色-魈.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/33/5h47uueobwqzur6vo90ag9fewfgqxdq.png",
+      "alt_text": "无背景-角色-魈.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-甘雨.png",
+      "filename": "无背景-角色-甘雨.png",
+      "storage_path": "items/character/无背景-角色-甘雨.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/18/qr9mmt4ryhcuovbx82pazu3xv7wr19p.png",
+      "alt_text": "无背景-角色-甘雨.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-阿贝多.png",
+      "filename": "无背景-角色-阿贝多.png",
+      "storage_path": "items/character/无背景-角色-阿贝多.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e9/k1zod68cqa6e89r0poxm9ihfmqfmgvw.png",
+      "alt_text": "无背景-角色-阿贝多.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-钟离.png",
+      "filename": "无背景-角色-钟离.png",
+      "storage_path": "items/character/无背景-角色-钟离.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a4/eewy674lo37jwuq9qozyszhz8vo0d8j.png",
+      "alt_text": "无背景-角色-钟离.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-达达利亚.png",
+      "filename": "无背景-角色-达达利亚.png",
+      "storage_path": "items/character/无背景-角色-达达利亚.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b1/4v48u6t4v9mfnwmabch9ojskqa1x61a.png",
+      "alt_text": "无背景-角色-达达利亚.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-可莉.png",
+      "filename": "无背景-角色-可莉.png",
+      "storage_path": "items/character/无背景-角色-可莉.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/26/59ohlo0p92xb8d7qut9ul8wi0ij6ehw.png",
+      "alt_text": "无背景-角色-可莉.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-温迪.png",
+      "filename": "无背景-角色-温迪.png",
+      "storage_path": "items/character/无背景-角色-温迪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/42/l9a990crawlwa9ur42ld1cgjvqzj3m9.png",
+      "alt_text": "无背景-角色-温迪.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-琴.png",
+      "filename": "无背景-角色-琴.png",
+      "storage_path": "items/character/无背景-角色-琴.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/8d/lm9cpnooekvfzfy7fbogykwjro3v5lw.png",
+      "alt_text": "无背景-角色-琴.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-旅行者.png",
+      "filename": "无背景-角色-旅行者.png",
+      "storage_path": "items/character/无背景-角色-旅行者.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/58/qp92ut2iic6699bu9h72reklefh1yb1.png",
+      "alt_text": "无背景-角色-旅行者.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-刻晴.png",
+      "filename": "无背景-角色-刻晴.png",
+      "storage_path": "items/character/无背景-角色-刻晴.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/6a/goj6bb8yj190midok60n2fbkk872090.png",
+      "alt_text": "无背景-角色-刻晴.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-迪卢克.png",
+      "filename": "无背景-角色-迪卢克.png",
+      "storage_path": "items/character/无背景-角色-迪卢克.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/90/lwq85ylshqji1oozf7odkv3xlquvttt.png",
+      "alt_text": "无背景-角色-迪卢克.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-莫娜.png",
+      "filename": "无背景-角色-莫娜.png",
+      "storage_path": "items/character/无背景-角色-莫娜.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/f1/refnobe859mskudq9i634djaniepwvt.png",
+      "alt_text": "无背景-角色-莫娜.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-七七.png",
+      "filename": "无背景-角色-七七.png",
+      "storage_path": "items/character/无背景-角色-七七.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/05/049fpv6jcr66mln0nmbbfgigfrkgrzo.png",
+      "alt_text": "无背景-角色-七七.png",
+      "grade": 5
+    },
+    {
+      "name": "无背景-角色-伊法.png",
+      "filename": "无背景-角色-伊法.png",
+      "storage_path": "items/character/无背景-角色-伊法.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/89/c8ipyauvz65c0q3pvshydy4gijmc8hu.png",
+      "alt_text": "无背景-角色-伊法.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-伊安珊.png",
+      "filename": "无背景-角色-伊安珊.png",
+      "storage_path": "items/character/无背景-角色-伊安珊.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/db/8c0jt9caudqbfayt7ib6s8pp1o592op.png",
+      "alt_text": "无背景-角色-伊安珊.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-蓝砚.png",
+      "filename": "无背景-角色-蓝砚.png",
+      "storage_path": "items/character/无背景-角色-蓝砚.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/1a/bub4a5fvem717ykupen2y5ykuxgaq1v.png",
+      "alt_text": "无背景-角色-蓝砚.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-欧洛伦.png",
+      "filename": "无背景-角色-欧洛伦.png",
+      "storage_path": "items/character/无背景-角色-欧洛伦.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a0/er29qthpa8eeze76b33jeused5d5i1h.png",
+      "alt_text": "无背景-角色-欧洛伦.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-卡齐娜.png",
+      "filename": "无背景-角色-卡齐娜.png",
+      "storage_path": "items/character/无背景-角色-卡齐娜.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/f7/rm89ee14ccmaeozqpx20wgdryjv1bue.png",
+      "alt_text": "无背景-角色-卡齐娜.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-赛索斯.png",
+      "filename": "无背景-角色-赛索斯.png",
+      "storage_path": "items/character/无背景-角色-赛索斯.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c9/pcpvdp91xt41afueycw2juyj4rv2m63.png",
+      "alt_text": "无背景-角色-赛索斯.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-嘉明.png",
+      "filename": "无背景-角色-嘉明.png",
+      "storage_path": "items/character/无背景-角色-嘉明.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a0/5vh3a6zfa666wfxshi1rr29zv4g856d.png",
+      "alt_text": "无背景-角色-嘉明.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-夏沃蕾.png",
+      "filename": "无背景-角色-夏沃蕾.png",
+      "storage_path": "items/character/无背景-角色-夏沃蕾.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/12/iakce2e672fecwy246beikk283jkxy1.png",
+      "alt_text": "无背景-角色-夏沃蕾.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-夏洛蒂.png",
+      "filename": "无背景-角色-夏洛蒂.png",
+      "storage_path": "items/character/无背景-角色-夏洛蒂.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/37/o8580twmm0juo2woot5cc7w4ok1mx70.png",
+      "alt_text": "无背景-角色-夏洛蒂.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-菲米尼.png",
+      "filename": "无背景-角色-菲米尼.png",
+      "storage_path": "items/character/无背景-角色-菲米尼.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/37/9q78sq7t8twzzavpsyvssvrhk8rk2e7.png",
+      "alt_text": "无背景-角色-菲米尼.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-琳妮特.png",
+      "filename": "无背景-角色-琳妮特.png",
+      "storage_path": "items/character/无背景-角色-琳妮特.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a5/48n9vyu0y80oimhqzz3g8otvsrs8yi5.png",
+      "alt_text": "无背景-角色-琳妮特.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-绮良良.png",
+      "filename": "无背景-角色-绮良良.png",
+      "storage_path": "items/character/无背景-角色-绮良良.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/6c/2j2ezxbtzkc2nue8tle7ud492a17tl9.png",
+      "alt_text": "无背景-角色-绮良良.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-卡维.png",
+      "filename": "无背景-角色-卡维.png",
+      "storage_path": "items/character/无背景-角色-卡维.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/cb/ikw661j7l88l47ngkef9rtocduaznmr.png",
+      "alt_text": "无背景-角色-卡维.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-米卡.png",
+      "filename": "无背景-角色-米卡.png",
+      "storage_path": "items/character/无背景-角色-米卡.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/6c/8dqxl2h8lrlz1la3s32y5fctsp8mbm2.png",
+      "alt_text": "无背景-角色-米卡.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-瑶瑶.png",
+      "filename": "无背景-角色-瑶瑶.png",
+      "storage_path": "items/character/无背景-角色-瑶瑶.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/af/1f3bjp39yqbcwv25gz0075vwtmm4gmx.png",
+      "alt_text": "无背景-角色-瑶瑶.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-珐露珊.png",
+      "filename": "无背景-角色-珐露珊.png",
+      "storage_path": "items/character/无背景-角色-珐露珊.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d2/lrf5xycxg48dchq27stnpawuvselk4i.png",
+      "alt_text": "无背景-角色-珐露珊.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-莱依拉.png",
+      "filename": "无背景-角色-莱依拉.png",
+      "storage_path": "items/character/无背景-角色-莱依拉.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/0f/k7qq4ohnq5a9rgxn3uuqvmhw5j7y77q.png",
+      "alt_text": "无背景-角色-莱依拉.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-坎蒂丝.png",
+      "filename": "无背景-角色-坎蒂丝.png",
+      "storage_path": "items/character/无背景-角色-坎蒂丝.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/67/lstlxgmithufj7tw1uix8wym7jrkp62.png",
+      "alt_text": "无背景-角色-坎蒂丝.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-多莉.png",
+      "filename": "无背景-角色-多莉.png",
+      "storage_path": "items/character/无背景-角色-多莉.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/7b/b54n1q1ssasdm18swkg6hiwzfzdgqes.png",
+      "alt_text": "无背景-角色-多莉.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-柯莱.png",
+      "filename": "无背景-角色-柯莱.png",
+      "storage_path": "items/character/无背景-角色-柯莱.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/21/s0xi3unv8y860tefgz49gi56vf0or8z.png",
+      "alt_text": "无背景-角色-柯莱.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-鹿野院平藏.png",
+      "filename": "无背景-角色-鹿野院平藏.png",
+      "storage_path": "items/character/无背景-角色-鹿野院平藏.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/79/0rst5gg62xkbdkl0jyirunzqstrdn79.png",
+      "alt_text": "无背景-角色-鹿野院平藏.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-久岐忍.png",
+      "filename": "无背景-角色-久岐忍.png",
+      "storage_path": "items/character/无背景-角色-久岐忍.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/5c/36j8hdr1i5dfg0r8tfxl0q8wlc8jndf.png",
+      "alt_text": "无背景-角色-久岐忍.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-云堇.png",
+      "filename": "无背景-角色-云堇.png",
+      "storage_path": "items/character/无背景-角色-云堇.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d0/17iziqlqa20jj0w3yhp5bebzoo9y6bt.png",
+      "alt_text": "无背景-角色-云堇.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-五郎.png",
+      "filename": "无背景-角色-五郎.png",
+      "storage_path": "items/character/无背景-角色-五郎.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e5/8ok291j1owt70axz3l8bxlj51w9rvl5.png",
+      "alt_text": "无背景-角色-五郎.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-托马.png",
+      "filename": "无背景-角色-托马.png",
+      "storage_path": "items/character/无背景-角色-托马.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/87/4npwdwlbof3hff5s7yyoxn5afmyo6bs.png",
+      "alt_text": "无背景-角色-托马.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-九条裟罗.png",
+      "filename": "无背景-角色-九条裟罗.png",
+      "storage_path": "items/character/无背景-角色-九条裟罗.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/36/bkvh6arzlluljnmsp1c36hbtqf37epy.png",
+      "alt_text": "无背景-角色-九条裟罗.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-早柚.png",
+      "filename": "无背景-角色-早柚.png",
+      "storage_path": "items/character/无背景-角色-早柚.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/0c/g52x6102jce31mjisvtsormdvbvdp1s.png",
+      "alt_text": "无背景-角色-早柚.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-烟绯.png",
+      "filename": "无背景-角色-烟绯.png",
+      "storage_path": "items/character/无背景-角色-烟绯.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/76/mzwn4qo66r2bh5aod73wvmeml4tf3jw.png",
+      "alt_text": "无背景-角色-烟绯.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-罗莎莉亚.png",
+      "filename": "无背景-角色-罗莎莉亚.png",
+      "storage_path": "items/character/无背景-角色-罗莎莉亚.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/ef/euoe9ncjixk5wlzfumjb81zf2ew7i49.png",
+      "alt_text": "无背景-角色-罗莎莉亚.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-辛焱.png",
+      "filename": "无背景-角色-辛焱.png",
+      "storage_path": "items/character/无背景-角色-辛焱.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/50/ssm5hres5t2jcnmqlmxvko87frukaaa.png",
+      "alt_text": "无背景-角色-辛焱.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-迪奥娜.png",
+      "filename": "无背景-角色-迪奥娜.png",
+      "storage_path": "items/character/无背景-角色-迪奥娜.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/9e/ebp74g68onexgkc2xsjuornx2j6bowp.png",
+      "alt_text": "无背景-角色-迪奥娜.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-砂糖.png",
+      "filename": "无背景-角色-砂糖.png",
+      "storage_path": "items/character/无背景-角色-砂糖.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/61/rhbp5t3iyzpsk2dc34kv18yem0nlmzo.png",
+      "alt_text": "无背景-角色-砂糖.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-雷泽.png",
+      "filename": "无背景-角色-雷泽.png",
+      "storage_path": "items/character/无背景-角色-雷泽.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/ed/j7d8muthggxnqfemb3tsbpkwyyzdusw.png",
+      "alt_text": "无背景-角色-雷泽.png", 
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-菲谢尔.png",
+      "filename": "无背景-角色-菲谢尔.png",
+      "storage_path": "items/character/无背景-角色-菲谢尔.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/8c/cmlxoc9sfz7nrwmt495351zcj1qd93e.png",
+      "alt_text": "无背景-角色-菲谢尔.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-丽莎.png",
+      "filename": "无背景-角色-丽莎.png",
+      "storage_path": "items/character/无背景-角色-丽莎.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/83/boxpoaln8hyivr555agt2371y3ss8um.png",
+      "alt_text": "无背景-角色-丽莎.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-北斗.png",
+      "filename": "无背景-角色-北斗.png",
+      "storage_path": "items/character/无背景-角色-北斗.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/8f/eo7y6muz7scr7y3tdp2995zmxe7no46.png",
+      "alt_text": "无背景-角色-北斗.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-香菱.png",
+      "filename": "无背景-角色-香菱.png",
+      "storage_path": "items/character/无背景-角色-香菱.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/9c/l5ae2erhaq8tn896a2yibndx5g7r5g5.png",
+      "alt_text": "无背景-角色-香菱.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-安柏.png",
+      "filename": "无背景-角色-安柏.png",
+      "storage_path": "items/character/无背景-角色-安柏.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/1c/l3iu4yd9jdee9fjj2ly9bp14dkpamuj.png",
+      "alt_text": "无背景-角色-安柏.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-班尼特.png",
+      "filename": "无背景-角色-班尼特.png",
+      "storage_path": "items/character/无背景-角色-班尼特.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/99/nd8jx8novy6974e5ez7bz9la04vajw8.png",
+      "alt_text": "无背景-角色-班尼特.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-行秋.png",
+      "filename": "无背景-角色-行秋.png",
+      "storage_path": "items/character/无背景-角色-行秋.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/bf/bz36kyv7jhk9p3sqk6g3r79a7t5aqa2.png",
+      "alt_text": "无背景-角色-行秋.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-芭芭拉.png",
+      "filename": "无背景-角色-芭芭拉.png",
+      "storage_path": "items/character/无背景-角色-芭芭拉.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/4c/02mt7yfsuz6ya7z2buugwspnlal13o8.png",
+      "alt_text": "无背景-角色-芭芭拉.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-凝光.png",
+      "filename": "无背景-角色-凝光.png",
+      "storage_path": "items/character/无背景-角色-凝光.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/bb/oo4earntw7se6jssxq5tjgsbyxrho79.png",
+      "alt_text": "无背景-角色-凝光.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-诺艾尔.png",
+      "filename": "无背景-角色-诺艾尔.png",
+      "storage_path": "items/character/无背景-角色-诺艾尔.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/30/q7e7j4ybveu9vpezgvjogwpmfzz1mm2.png",
+      "alt_text": "无背景-角色-诺艾尔.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-凯亚.png",
+      "filename": "无背景-角色-凯亚.png",
+      "storage_path": "items/character/无背景-角色-凯亚.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d5/hyj4s4c0rwh65unllh0emkpdxwf0aq2.png",
+      "alt_text": "无背景-角色-凯亚.png",
+      "grade": 4
+    },
+    {
+      "name": "无背景-角色-重云.png",
+      "filename": "无背景-角色-重云.png",
+      "storage_path": "items/character/无背景-角色-重云.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/bd/mpnu86qhgs99cbbt35kb09702aqp70i.png",
+      "alt_text": "无背景-角色-重云.png",
+      "grade": 4
+    },
+    {
+      "name": "image_149",
+      "filename": "image_149_149.png",
+      "storage_path": "items/character/image_149_149.png",
+      "original_url": "https://static.biligame.net/common/images/culture-logo.png",
+      "alt_text": "image_149",
+      "grade": 4
+    },
+    {
+      "name": "image_150",
+      "filename": "image_150_150.png",
+      "storage_path": "items/character/image_150_150.png",
+      "original_url": "https://static.biligame.net/common/images/record-logo.png",
+      "alt_text": "image_150",
+      "grade": 4
+    }
+  ]
+}

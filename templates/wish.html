@@ -1,0 +1,197 @@
+{% extends "base.html" %}
+
+{% block title %}抽卡 - 抽卡系统{% endblock %}
+
+{% block content %}
+<div class="row">
+    <div class="col-12 text-center mb-4">
+        <h2><i class="bi bi-star-fill text-warning"></i> 抽卡系统</h2>
+        <p class="text-muted">选择卡池类型和抽卡方式开始你的抽卡之旅</p>
+    </div>
+</div>
+
+<div class="row justify-content-center mb-4">
+    <div class="col-md-8">
+        <div class="card">
+            <div class="card-header text-center">
+                <h5><i class="bi bi-gear"></i> 抽卡设置</h5>
+            </div>
+            <div class="card-body">
+                <form id="wishForm">
+                    <div class="row mb-3">
+                        <div class="col-md-6">
+                            <label class="form-label">卡池类型</label>
+                            <div class="d-grid gap-2">
+                                <input type="radio" class="btn-check" name="pool_type" id="pool_character" value="character" checked>
+                                <label class="btn btn-outline-success" for="pool_character">
+                                    <i class="bi bi-people-fill"></i> 角色卡池
+                                </label>
+                                
+                                <input type="radio" class="btn-check" name="pool_type" id="pool_weapon" value="weapon">
+                                <label class="btn btn-outline-danger" for="pool_weapon">
+                                    <i class="bi bi-sword"></i> 武器卡池
+                                </label>
+                            </div>
+                        </div>
+                        
+                        <div class="col-md-6">
+                            <label class="form-label">抽卡方式</label>
+                            <div class="d-grid gap-2">
+                                <button type="button" class="btn btn-primary" onclick="makeWish('single')">
+                                    <i class="bi bi-star"></i> 单抽 (1次)
+                                </button>
+                                
+                                <button type="button" class="btn btn-warning" onclick="makeWish('ten')">
+                                    <i class="bi bi-stars"></i> 十连抽 (10次)
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+<div class="row justify-content-center">
+    <div class="col-md-10">
+        <div class="card">
+            <div class="card-header">
+                <h5><i class="bi bi-gift"></i> 抽卡结果</h5>
+            </div>
+            <div class="card-body">
+                <div id="wishResults" class="text-center text-muted">
+                    <i class="bi bi-question-circle display-1 mb-3"></i>
+                    <p>选择卡池和抽卡方式开始抽卡</p>
+                    <small class="text-muted">
+                        概率说明：5星道具 0.6% | 4星道具 5.1% | 3星道具 94.3%
+                    </small>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- 抽卡加载模态框 -->
+<div class="modal fade" id="wishModal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-body text-center">
+                <div class="spinner-border text-primary mb-3" role="status">
+                    <span class="visually-hidden">抽卡中...</span>
+                </div>
+                <p>抽卡中，请稍候...</p>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% block scripts %}
+<script>
+function makeWish(wishType) {
+    const poolType = document.querySelector('input[name="pool_type"]:checked').value;
+    
+    // 显示加载模态框
+    const modal = new bootstrap.Modal(document.getElementById('wishModal'));
+    modal.show();
+    
+    // 发送抽卡请求
+    fetch('{{ url_for("wish") }}', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/x-www-form-urlencoded',
+        },
+        body: `wish_type=${wishType}&pool_type=${poolType}`
+    })
+    .then(response => response.json())
+    .then(data => {
+        modal.hide();
+        
+        if (data.success) {
+            displayWishResults(data.results);
+        } else {
+            alert('抽卡失败: ' + data.message);
+        }
+    })
+    .catch(error => {
+        modal.hide();
+        alert('网络错误，请重试');
+        console.error('Error:', error);
+    });
+}
+
+function displayWishResults(results) {
+    const container = document.getElementById('wishResults');
+    
+    if (results.length === 0) {
+        container.innerHTML = '<p class="text-muted">没有抽到任何道具</p>';
+        return;
+    }
+    
+    let html = '<div class="row">';
+    
+    results.forEach(result => {
+        const gradeClass = `grade-${result.grade}`;
+        const typeIcon = result.type === 'character' ? 'bi-person-fill' : 'bi-hammer';
+        const typeName = result.type === 'character' ? '角色' : '武器';
+        
+        html += `
+            <div class="col-md-6 col-lg-4 mb-3">
+                <div class="wish-result ${gradeClass} text-center">
+                    <div class="mb-2">
+                        <i class="bi ${typeIcon} display-4"></i>
+                    </div>
+                    <h6 class="mb-1">${result.name}</h6>
+                    <div class="mb-2">
+                        ${Array.from({length: result.grade}, () => '<i class="bi bi-star-fill"></i>').join('')}
+                    </div>
+                    <small class="badge bg-secondary">${typeName}</small>
+                </div>
+            </div>
+        `;
+    });
+    
+    html += '</div>';
+    
+    // 添加统计信息
+    const gradeCount = {};
+    results.forEach(result => {
+        gradeCount[result.grade] = (gradeCount[result.grade] || 0) + 1;
+    });
+    
+    html += '<div class="mt-3 text-center">';
+    html += '<h6>本次抽卡统计</h6>';
+    html += '<div class="row justify-content-center">';
+    
+    Object.keys(gradeCount).sort((a, b) => b - a).forEach(grade => {
+        html += `
+            <div class="col-auto">
+                <span class="badge bg-secondary grade-${grade}">
+                    ${grade}星: ${gradeCount[grade]}个
+                </span>
+            </div>
+        `;
+    });
+    
+    html += '</div></div>';
+    
+    container.innerHTML = html;
+    
+    // 添加动画效果
+    setTimeout(() => {
+        document.querySelectorAll('.wish-result').forEach((element, index) => {
+            setTimeout(() => {
+                element.style.opacity = '0';
+                element.style.transform = 'scale(0.8)';
+                setTimeout(() => {
+                    element.style.transition = 'all 0.5s ease';
+                    element.style.opacity = '1';
+                    element.style.transform = 'scale(1)';
+                }, 50);
+            }, index * 100);
+        });
+    }, 100);
+}
+</script>
+{% endblock %} 

@@ -1,0 +1,1676 @@
+{
+  "images": [
+    {
+      "name": "香韵奏者.png",
+      "filename": "香韵奏者.png",
+      "storage_path": "items/weapon/香韵奏者.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/7e/6ascgcioroql3nrhp1hcoxioflgzyc1.png",
+      "alt_text": "香韵奏者.png",
+      "grade": 5
+    },
+    {
+      "name": "溢彩心念.png",
+      "filename": "溢彩心念.png",
+      "storage_path": "items/weapon/溢彩心念.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/bc/4tc6ba8dt6fvk75mbhvk0ur1a6wy2gu.png",
+      "alt_text": "溢彩心念.png",
+      "grade": 5
+    },
+    {
+      "name": "寝正月初晴.png",
+      "filename": "寝正月初晴.png",
+      "storage_path": "items/weapon/寝正月初晴.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/69/78xibywpek0wts8y4i0ar22tjmi2nbs.png",
+      "alt_text": "寝正月初晴.png",
+      "grade": 5
+    },
+    {
+      "name": "焚曜千阳.png",
+      "filename": "焚曜千阳.png",
+      "storage_path": "items/weapon/焚曜千阳.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a9/37inb3nlzmwp7ijcr3hs065lca2rw3e.png",
+      "alt_text": "焚曜千阳.png",
+      "grade": 5
+    },
+    {
+      "name": "祭星者之望.png",
+      "filename": "祭星者之望.png",
+      "storage_path": "items/weapon/祭星者之望.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/16/jm5tbjwg1h5tjm1i7emoib3jh985h5n.png",
+      "alt_text": "祭星者之望.png",
+      "grade": 5
+    },
+    {
+      "name": "星鹫赤羽.png",
+      "filename": "星鹫赤羽.png",
+      "storage_path": "items/weapon/星鹫赤羽.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a6/0l52qp2fydn2bljxqxtbsah3dch57y1.png",
+      "alt_text": "星鹫赤羽.png",
+      "grade": 5
+    },
+    {
+      "name": "岩峰巡歌.png",
+      "filename": "岩峰巡歌.png",
+      "storage_path": "items/weapon/岩峰巡歌.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d4/399hzy66nvsul4kmk93277lst2h1srf.png",
+      "alt_text": "岩峰巡歌.png",
+      "grade": 5
+    },
+    {
+      "name": "冲浪时光.png",
+      "filename": "冲浪时光.png",
+      "storage_path": "items/weapon/冲浪时光.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d8/doku5vra5n4322h7t9ziphst0j0jbpc.png",
+      "alt_text": "冲浪时光.png",
+      "grade": 5
+    },
+    {
+      "name": "山王长牙.png",
+      "filename": "山王长牙.png",
+      "storage_path": "items/weapon/山王长牙.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/11/o63s8jsoyaaxomwldh1wgghx73qnvfk.png",
+      "alt_text": "山王长牙.png",
+      "grade": 5
+    },
+    {
+      "name": "柔灯挽歌.png",
+      "filename": "柔灯挽歌.png",
+      "storage_path": "items/weapon/柔灯挽歌.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e0/lfygk8u4iskjkz0vfi4b3a6w551gxnv.png",
+      "alt_text": "柔灯挽歌.png",
+      "grade": 5
+    },
+    {
+      "name": "赦罪.png",
+      "filename": "赦罪.png",
+      "storage_path": "items/weapon/赦罪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/8d/fwdj3er8r0to6r1u626mmu7h96z5f8o.png",
+      "alt_text": "赦罪.png",
+      "grade": 5
+    },
+    {
+      "name": "白雨心弦.png",
+      "filename": "白雨心弦.png",
+      "storage_path": "items/weapon/白雨心弦.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/37/t8107my1vo24eayiftfyhe3eqilcuvs.png",
+      "alt_text": "白雨心弦.png",
+      "grade": 5
+    },
+    {
+      "name": "赤月之形.png",
+      "filename": "赤月之形.png",
+      "storage_path": "items/weapon/赤月之形.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/dd/hrnlhl8wytqd4tsiv01z9flx1ggbgcu.png",
+      "alt_text": "赤月之形.png",
+      "grade": 5
+    },
+    {
+      "name": "有乐御簾切.png",
+      "filename": "有乐御簾切.png",
+      "storage_path": "items/weapon/有乐御簾切.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d4/admmacy9gzyyphch9qax103t211v53s.png",
+      "alt_text": "有乐御簾切.png",
+      "grade": 5
+    },
+    {
+      "name": "鹤鸣余音.png",
+      "filename": "鹤鸣余音.png",
+      "storage_path": "items/weapon/鹤鸣余音.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/ab/f8lso1296w060ogbikap86q7infyr1a.png",
+      "alt_text": "鹤鸣余音.png",
+      "grade": 5
+    },
+    {
+      "name": "裁断.png",
+      "filename": "裁断.png",
+      "storage_path": "items/weapon/裁断.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/db/4n4dskd3fz542ng0ju6zq3jw1uvgexk.png",
+      "alt_text": "裁断.png",
+      "grade": 5
+    },
+    {
+      "name": "静水流涌之辉.png",
+      "filename": "静水流涌之辉.png",
+      "storage_path": "items/weapon/静水流涌之辉.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/af/q1jgdjyl9q5qlew4lji033iisgknvd4.png",
+      "alt_text": "静水流涌之辉.png",
+      "grade": 5
+    },
+    {
+      "name": "万世流涌大典.png",
+      "filename": "万世流涌大典.png",
+      "storage_path": "items/weapon/万世流涌大典.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/be/5n256v9as24li27bmn5k2iv0i084hxy.png",
+      "alt_text": "万世流涌大典.png",
+      "grade": 5
+    },
+    {
+      "name": "金流监督.png",
+      "filename": "金流监督.png",
+      "storage_path": "items/weapon/金流监督.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/12/76fp8j27g42j5acnqlu9al5jpvs2tci.png",
+      "alt_text": "金流监督.png",
+      "grade": 5
+    },
+    {
+      "name": "最初的大魔术.png",
+      "filename": "最初的大魔术.png",
+      "storage_path": "items/weapon/最初的大魔术.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/15/qfvgye39ecsmpwrf5qy8f97l1e5hhst.png",
+      "alt_text": "最初的大魔术.png",
+      "grade": 5
+    },
+    {
+      "name": "碧落之珑.png",
+      "filename": "碧落之珑.png",
+      "storage_path": "items/weapon/碧落之珑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/7b/p053efvj07v023g4650klilwj1tiqdw.png",
+      "alt_text": "碧落之珑.png",
+      "grade": 5
+    },
+    {
+      "name": "苇海信标.png",
+      "filename": "苇海信标.png",
+      "storage_path": "items/weapon/苇海信标.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d7/9m9hbg17umdxrxbwhpz273bq1db3qc0.png",
+      "alt_text": "苇海信标.png",
+      "grade": 5
+    },
+    {
+      "name": "裁叶萃光.png",
+      "filename": "裁叶萃光.png",
+      "storage_path": "items/weapon/裁叶萃光.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/bc/duzuhy4bbh8ej5m3nwhfqf3fyfr1fyv.png",
+      "alt_text": "裁叶萃光.png",
+      "grade": 5
+    },
+    {
+      "name": "图莱杜拉的回忆.png",
+      "filename": "图莱杜拉的回忆.png",
+      "storage_path": "items/weapon/图莱杜拉的回忆.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/cb/q6ppzrt0mfpfuy4ra65s0ed4jqr3aes.png",
+      "alt_text": "图莱杜拉的回忆.png",
+      "grade": 5
+    },
+    {
+      "name": "千夜浮梦.png",
+      "filename": "千夜浮梦.png",
+      "storage_path": "items/weapon/千夜浮梦.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/07/s74zq4c9sas58jwxkt3adstibl7qcib.png",
+      "alt_text": "千夜浮梦.png",
+      "grade": 5
+    },
+    {
+      "name": "圣显之钥.png",
+      "filename": "圣显之钥.png",
+      "storage_path": "items/weapon/圣显之钥.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c8/20gddrmu0jjg0dtotbrj6l24ctb64gd.png",
+      "alt_text": "圣显之钥.png",
+      "grade": 5
+    },
+    {
+      "name": "赤沙之杖.png",
+      "filename": "赤沙之杖.png",
+      "storage_path": "items/weapon/赤沙之杖.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/37/i2gicv7klq5ne29jf3lz2dktl5c5j7a.png",
+      "alt_text": "赤沙之杖.png",
+      "grade": 5
+    },
+    {
+      "name": "猎人之径.png",
+      "filename": "猎人之径.png",
+      "storage_path": "items/weapon/猎人之径.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b4/oeap8gkvc29t665uy64nnod68cny0v2.png",
+      "alt_text": "猎人之径.png",
+      "grade": 5
+    },
+    {
+      "name": "若水.png",
+      "filename": "若水.png",
+      "storage_path": "items/weapon/若水.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/af/o2trbbsyf2kvcxuegwi8xvb0xfl2kmk.png",
+      "alt_text": "若水.png",
+      "grade": 5
+    },
+    {
+      "name": "波乱月白经津.png",
+      "filename": "波乱月白经津.png",
+      "storage_path": "items/weapon/波乱月白经津.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/9a/0luibsomngme29h3q62sbueig7zafna.png",
+      "alt_text": "波乱月白经津.png",
+      "grade": 5
+    },
+    {
+      "name": "神乐之真意.png",
+      "filename": "神乐之真意.png",
+      "storage_path": "items/weapon/神乐之真意.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/01/jrwr230b17m9j6fuo25b04eb1ziwrov.png",
+      "alt_text": "神乐之真意.png",
+      "grade": 5
+    },
+    {
+      "name": "息灾.png",
+      "filename": "息灾.png",
+      "storage_path": "items/weapon/息灾.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/ab/1davjsfx18xw3v9xz5pdxjlzwe730vn.png",
+      "alt_text": "息灾.png",
+      "grade": 5
+    },
+    {
+      "name": "赤角石溃杵.png",
+      "filename": "赤角石溃杵.png",
+      "storage_path": "items/weapon/赤角石溃杵.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/58/egjrzrzlfm9p7ds13g9n5yn0e1v3pev.png",
+      "alt_text": "赤角石溃杵.png",
+      "grade": 5
+    },
+    {
+      "name": "冬极白星.png",
+      "filename": "冬极白星.png",
+      "storage_path": "items/weapon/冬极白星.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/4a/lbn9hfwq08te0cghdu44x24bir7o93e.png",
+      "alt_text": "冬极白星.png",
+      "grade": 5
+    },
+    {
+      "name": "薙草之稻光.png",
+      "filename": "薙草之稻光.png",
+      "storage_path": "items/weapon/薙草之稻光.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/50/e6m859od1g4ucogx58ytwcvr9vom8em.png",
+      "alt_text": "薙草之稻光.png",
+      "grade": 5
+    },
+    {
+      "name": "不灭月华.png",
+      "filename": "不灭月华.png",
+      "storage_path": "items/weapon/不灭月华.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/84/7l5swg86g75qp6fpskigns1vebs75r1.png",
+      "alt_text": "不灭月华.png",
+      "grade": 5
+    },
+    {
+      "name": "雾切之回光.png",
+      "filename": "雾切之回光.png",
+      "storage_path": "items/weapon/雾切之回光.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/06/tftyt95dhatbvfeqcbwgkaid6kohsub.png",
+      "alt_text": "雾切之回光.png",
+      "grade": 5
+    },
+    {
+      "name": "飞雷之弦振.png",
+      "filename": "飞雷之弦振.png",
+      "storage_path": "items/weapon/飞雷之弦振.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/3c/ejbu26uc82uaugh8uc5urr1tc303uws.png",
+      "alt_text": "飞雷之弦振.png",
+      "grade": 5
+    },
+    {
+      "name": "苍古自由之誓.png",
+      "filename": "苍古自由之誓.png",
+      "storage_path": "items/weapon/苍古自由之誓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/9c/s33ad0g15uajwrwuocu2ydbduo5top7.png",
+      "alt_text": "苍古自由之誓.png",
+      "grade": 5
+    },
+    {
+      "name": "松籁响起之时.png",
+      "filename": "松籁响起之时.png",
+      "storage_path": "items/weapon/松籁响起之时.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/fe/br8j2j9bqs2r1e1bt6mkmw3qwywn8cg.png",
+      "alt_text": "松籁响起之时.png",
+      "grade": 5
+    },
+    {
+      "name": "终末嗟叹之诗.png",
+      "filename": "终末嗟叹之诗.png",
+      "storage_path": "items/weapon/终末嗟叹之诗.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a1/2s11z5u7vd4hte4qb3lmfz9qww4gzl9.png",
+      "alt_text": "终末嗟叹之诗.png",
+      "grade": 5
+    },
+    {
+      "name": "磐岩结绿.png",
+      "filename": "磐岩结绿.png",
+      "storage_path": "items/weapon/磐岩结绿.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/0c/a3c2nk6mszyh54oa3h85ey3a2llox9h.png",
+      "alt_text": "磐岩结绿.png",
+      "grade": 5
+    },
+    {
+      "name": "护摩之杖.png",
+      "filename": "护摩之杖.png",
+      "storage_path": "items/weapon/护摩之杖.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/8e/bgt87ddwa4zm52fsann2dz73tfd29qg.png",
+      "alt_text": "护摩之杖.png",
+      "grade": 5
+    },
+    {
+      "name": "斫峰之刃.png",
+      "filename": "斫峰之刃.png",
+      "storage_path": "items/weapon/斫峰之刃.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/52/apwds1zuq7bymq572qthh1aw3j8mjx6.png",
+      "alt_text": "斫峰之刃.png",
+      "grade": 5
+    },
+    {
+      "name": "无工之剑.png",
+      "filename": "无工之剑.png",
+      "storage_path": "items/weapon/无工之剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/3f/a7z9mi5plfp88ecpeoat389kqivysft.png",
+      "alt_text": "无工之剑.png",
+      "grade": 5
+    },
+    {
+      "name": "贯虹之槊.png",
+      "filename": "贯虹之槊.png",
+      "storage_path": "items/weapon/贯虹之槊.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/ed/m1d4pox9fuaklkbgp7czt1rc32c4vg0.png",
+      "alt_text": "贯虹之槊.png",
+      "grade": 5
+    },
+    {
+      "name": "尘世之锁.png",
+      "filename": "尘世之锁.png",
+      "storage_path": "items/weapon/尘世之锁.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c1/iv8sa85v2wh81npdj1drdyb01i9b5uq.png",
+      "alt_text": "尘世之锁.png",
+      "grade": 5
+    },
+    {
+      "name": "和璞鸢.png",
+      "filename": "和璞鸢.png",
+      "storage_path": "items/weapon/和璞鸢.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/17/qrsylrcoha9i3rmfaah1ojzymvsuhf9.png",
+      "alt_text": "和璞鸢.png",
+      "grade": 5
+    },
+    {
+      "name": "天空之傲.png",
+      "filename": "天空之傲.png",
+      "storage_path": "items/weapon/天空之傲.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a8/1ymiut626atl2wctx4ukolw60w9mvwd.png",
+      "alt_text": "天空之傲.png",
+      "grade": 5
+    },
+    {
+      "name": "天空之卷.png",
+      "filename": "天空之卷.png",
+      "storage_path": "items/weapon/天空之卷.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/5e/ljga8vdrkv9u3erfguhsuv9i568l8yo.png",
+      "alt_text": "天空之卷.png", 
+      "grade": 5
+    },
+    {
+      "name": "四风原典.png",
+      "filename": "四风原典.png",
+      "storage_path": "items/weapon/四风原典.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/85/h2any7ypjy8nejtlu4dshfb5ds73n7r.png",
+      "alt_text": "四风原典.png",
+      "grade": 5
+    },
+    {
+      "name": "狼的末路.png",
+      "filename": "狼的末路.png",
+      "storage_path": "items/weapon/狼的末路.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/9a/s5wst50l76mnmcds5qq7a3w5ij1jt3x.png",
+      "alt_text": "狼的末路.png",
+      "grade": 5
+    },
+    {
+      "name": "阿莫斯之弓.png",
+      "filename": "阿莫斯之弓.png",
+      "storage_path": "items/weapon/阿莫斯之弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c6/o1bcb4o9oo765hbycm6949f9f0njcdd.png",
+      "alt_text": "阿莫斯之弓.png",
+      "grade": 5
+    },
+    {
+      "name": "风鹰剑.png",
+      "filename": "风鹰剑.png",
+      "storage_path": "items/weapon/风鹰剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/5d/0nq1evrhhxelybr3mogpxoouc4s6b98.png",
+      "alt_text": "风鹰剑.png",
+      "grade": 5
+    },
+    {
+      "name": "天空之刃.png",
+      "filename": "天空之刃.png",
+      "storage_path": "items/weapon/天空之刃.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e3/pdych2p08vbppwo0q777tpt8ij5xu0i.png",
+      "alt_text": "天空之刃.png",
+      "grade": 5
+    },
+    {
+      "name": "天空之脊.png",
+      "filename": "天空之脊.png",
+      "storage_path": "items/weapon/天空之脊.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/78/2xhhbluf7qsanm6pae1lnyoowy9nepd.png",
+      "alt_text": "天空之脊.png",
+      "grade": 5
+    },
+    {
+      "name": "天空之翼.png",
+      "filename": "天空之翼.png",
+      "storage_path": "items/weapon/天空之翼.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a2/tj1tuu3q9s6cdvgp52jdeydqla8x4v0.png",
+      "alt_text": "天空之翼.png",
+      "grade": 5
+    },
+    {
+      "name": "冷寂迸音.png",
+      "filename": "冷寂迸音.png",
+      "storage_path": "items/weapon/冷寂迸音.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/09/8js08lxizwjvse27ux5wbqgo4exlmv0.png",
+      "alt_text": "冷寂迸音.png",
+      "grade": 4
+    },
+    {
+      "name": "且住亭御咄.png",
+      "filename": "且住亭御咄.png",
+      "storage_path": "items/weapon/且住亭御咄.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b0/mibk0hgwrzmchtvc4kn8v6zhv7g0834.png",
+      "alt_text": "且住亭御咄.png",
+      "grade": 4
+    },
+    {
+      "name": "乘浪的回旋.png",
+      "filename": "乘浪的回旋.png",
+      "storage_path": "items/weapon/乘浪的回旋.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/6b/bqpxby90jhfofr7ghewce881nyq8rv8.png",
+      "alt_text": "乘浪的回旋.png",
+      "grade": 4
+    },
+    {
+      "name": "缀花之翎.png",
+      "filename": "缀花之翎.png",
+      "storage_path": "items/weapon/缀花之翎.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d7/1r3jb5m3l6h53i3uczy3vwz5dalka55.png",
+      "alt_text": "缀花之翎.png",
+      "grade": 4
+    },
+    {
+      "name": "厄水之祸.png",
+      "filename": "厄水之祸.png",
+      "storage_path": "items/weapon/厄水之祸.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e6/3h24efaas5b72f5gz0qjf5lkjm4sy1x.png",
+      "alt_text": "厄水之祸.png",
+      "grade": 4
+    },
+    {
+      "name": "硕果钩.png",
+      "filename": "硕果钩.png",
+      "storage_path": "items/weapon/硕果钩.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/84/17wrujpxwumojgl5orae6b0dla4dcqj.png",
+      "alt_text": "硕果钩.png",
+      "grade": 4
+    },
+    {
+      "name": "镇山之钉.png",
+      "filename": "镇山之钉.png",
+      "storage_path": "items/weapon/镇山之钉.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/18/q83vlslbeosh0exn85qsmj2us0yryso.png",
+      "alt_text": "镇山之钉.png",
+      "grade": 4
+    },
+    {
+      "name": "弥坚骨.png",
+      "filename": "弥坚骨.png",
+      "storage_path": "items/weapon/弥坚骨.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/1a/mys2cxiagtnmu0u5tx6tazoy7gcee3x.png",
+      "alt_text": "弥坚骨.png",
+      "grade": 4
+    },
+    {
+      "name": "木棉之环.png",
+      "filename": "木棉之环.png",
+      "storage_path": "items/weapon/木棉之环.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/df/mbepakz9iiptk9t1mcu4p0jlgo6oloy.png",
+      "alt_text": "木棉之环.png",
+      "grade": 4
+    },
+    {
+      "name": "撼地者.png",
+      "filename": "撼地者.png",
+      "storage_path": "items/weapon/撼地者.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/25/5xs5lrydfug84wjw5c6z1iwif0qr2tk.png",
+      "alt_text": "撼地者.png",
+      "grade": 4
+    },
+    {
+      "name": "碎链.png",
+      "filename": "碎链.png",
+      "storage_path": "items/weapon/碎链.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/24/5x7znu6nnajgl6cxlfbbu3bpexjzx4s.png",
+      "alt_text": "碎链.png",
+      "grade": 4
+    },
+    {
+      "name": "虹的行迹.png",
+      "filename": "虹的行迹.png",
+      "storage_path": "items/weapon/虹的行迹.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/7c/syhebsx0c0l48x1rf5wxjxfial5lhc5.png",
+      "alt_text": "虹的行迹.png",
+      "grade": 4
+    },
+    {
+      "name": "息燧之笛.png",
+      "filename": "息燧之笛.png",
+      "storage_path": "items/weapon/息燧之笛.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/4d/a9e00276hu6undc2ae5n1te947jp3u3.png",
+      "alt_text": "息燧之笛.png",
+      "grade": 4
+    },
+    {
+      "name": "苍纹角杯.png",
+      "filename": "苍纹角杯.png",
+      "storage_path": "items/weapon/苍纹角杯.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e7/ctkm7wlhm0ogif2n79zzyjj8nytuds4.png",
+      "alt_text": "苍纹角杯.png",
+      "grade": 4
+    },
+    {
+      "name": "筑云.png",
+      "filename": "筑云.png",
+      "storage_path": "items/weapon/筑云.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/fc/g63p5b04sgfk5f0idzhk828o0mwpc1a.png",
+      "alt_text": "筑云.png",
+      "grade": 4
+    },
+    {
+      "name": "沙中伟贤的对答.png",
+      "filename": "沙中伟贤的对答.png",
+      "storage_path": "items/weapon/沙中伟贤的对答.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/ce/6adbrpkf46xktozti6rkjh2w9osrl0w.png",
+      "alt_text": "沙中伟贤的对答.png",
+      "grade": 4
+    },
+    {
+      "name": "「究极霸王超级魔剑」.png",
+      "filename": "究极霸王超级魔剑.png",
+      "storage_path": "items/weapon/究极霸王超级魔剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/bd/dr982oib5k9cegtr8n4db26sc2ft0dt.png",
+      "alt_text": "「究极霸王超级魔剑」.png",
+      "grade": 4
+    },
+    {
+      "name": "水仙十字之剑.png",
+      "filename": "水仙十字之剑.png",
+      "storage_path": "items/weapon/水仙十字之剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e4/1zojb0qra2xlt9qm0lfwn8yl51jdgwf.png",
+      "alt_text": "水仙十字之剑.png",
+      "grade": 4
+    },
+    {
+      "name": "测距规.png",
+      "filename": "测距规.png",
+      "storage_path": "items/weapon/测距规.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/72/g36dswb8dm5zsafv8f78yozd8g2trbr.png",
+      "alt_text": "测距规.png",
+      "grade": 4
+    },
+    {
+      "name": "勘探钻机.png",
+      "filename": "勘探钻机.png",
+      "storage_path": "items/weapon/勘探钻机.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b9/gd2u4yis2xwrxtc2y69g91vyxcucpt8.png",
+      "alt_text": "勘探钻机.png",
+      "grade": 4
+    },
+    {
+      "name": "便携动力锯.png",
+      "filename": "便携动力锯.png",
+      "storage_path": "items/weapon/便携动力锯.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a4/ftueb8igqc763l2dl4m68chx6rkesb0.png",
+      "alt_text": "便携动力锯.png",
+      "grade": 4
+    },
+    {
+      "name": "船坞长剑.png",
+      "filename": "船坞长剑.png",
+      "storage_path": "items/weapon/船坞长剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/1f/l7anxgch136tb02e6zsf1dewwuh9kje.png",
+      "alt_text": "船坞长剑.png",
+      "grade": 4
+    },
+    {
+      "name": "无垠蔚蓝之歌.png",
+      "filename": "无垠蔚蓝之歌.png",
+      "storage_path": "items/weapon/无垠蔚蓝之歌.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/02/s88xozo7tb09d9zhnaji09ntb9ml520.png",
+      "alt_text": "无垠蔚蓝之歌.png",
+      "grade": 4
+    },
+    {
+      "name": "烈阳之嗣.png",
+      "filename": "烈阳之嗣.png",
+      "storage_path": "items/weapon/烈阳之嗣.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/dd/7ojaysucd6cgwvhwoivbq98qf3bp9xj.png",
+      "alt_text": "烈阳之嗣.png",
+      "grade": 4
+    },
+    {
+      "name": "静谧之曲.png",
+      "filename": "静谧之曲.png",
+      "storage_path": "items/weapon/静谧之曲.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/fe/8iwkuxzq146dkeymlh6qkuxbvfdpoqc.png",
+      "alt_text": "静谧之曲.png",
+      "grade": 4
+    },
+    {
+      "name": "狼牙.png",
+      "filename": "狼牙.png",
+      "storage_path": "items/weapon/狼牙.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/0e/tq44n4433mw4y3ctf1i1d947qs8k9u8.png",
+      "alt_text": "狼牙.png",
+      "grade": 4
+    },
+    {
+      "name": "纯水流华.png",
+      "filename": "纯水流华.png",
+      "storage_path": "items/weapon/纯水流华.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/6c/jp429se0l1ghr2k140civ57xhrqab70.png",
+      "alt_text": "纯水流华.png",
+      "grade": 4
+    },
+    {
+      "name": "聊聊棒.png",
+      "filename": "聊聊棒.png",
+      "storage_path": "items/weapon/聊聊棒.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/21/3qjtjdg21v7gu05olw8iuzdeyxoa5or.png",
+      "alt_text": "聊聊棒.png",
+      "grade": 4
+    },
+    {
+      "name": "灰河渡手.png",
+      "filename": "灰河渡手.png",
+      "storage_path": "items/weapon/灰河渡手.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/db/lzxhapado63gswzjtx4u60xlq61k6k7.png",
+      "alt_text": "灰河渡手.png",
+      "grade": 4
+    },
+    {
+      "name": "遗祀玉珑.png",
+      "filename": "遗祀玉珑.png",
+      "storage_path": "items/weapon/遗祀玉珑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/7b/jj6meh7rkkdb0kx9bnu9rmcn1if8nyr.png",
+      "alt_text": "遗祀玉珑.png",
+      "grade": 4
+    },
+    {
+      "name": "峡湾长歌.png",
+      "filename": "峡湾长歌.png",
+      "storage_path": "items/weapon/峡湾长歌.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/3a/jrh07qi2uggsfuf679f8dm5aqzvrvui.png",
+      "alt_text": "峡湾长歌.png",
+      "grade": 4
+    },
+    {
+      "name": "海渊终曲.png",
+      "filename": "海渊终曲.png",
+      "storage_path": "items/weapon/海渊终曲.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/84/ndbcgqpimkebuo232ipomls00godnzz.png",
+      "alt_text": "海渊终曲.png",
+      "grade": 4
+    },
+    {
+      "name": "浪影阔剑.png",
+      "filename": "浪影阔剑.png",
+      "storage_path": "items/weapon/浪影阔剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e6/mbzt338m0h7y62szk32fietoy61431d.png",
+      "alt_text": "浪影阔剑.png",
+      "grade": 4
+    },
+    {
+      "name": "公义的酬报.png",
+      "filename": "公义的酬报.png",
+      "storage_path": "items/weapon/公义的酬报.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e0/jm3wlkv8dkptu0zkqquo0dngim44jyw.png",
+      "alt_text": "公义的酬报.png",
+      "grade": 4
+    },
+    {
+      "name": "鹮穿之喙.png",
+      "filename": "鹮穿之喙.png",
+      "storage_path": "items/weapon/鹮穿之喙.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/f0/g10fvdm9o5fy4v69i21ci8ig37y15g9.png",
+      "alt_text": "鹮穿之喙.png",
+      "grade": 4
+    },
+    {
+      "name": "饰铁之花.png",
+      "filename": "饰铁之花.png",
+      "storage_path": "items/weapon/饰铁之花.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/fc/fk6kgg3m2h8kooteago3bxkj3qyphtp.png",
+      "alt_text": "饰铁之花.png",
+      "grade": 4
+    },
+    {
+      "name": "东花坊时雨.png",
+      "filename": "东花坊时雨.png",
+      "storage_path": "items/weapon/东花坊时雨.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/ed/4e0h36rcyvqlf36b7r5zxm6u4m0s38q.png",
+      "alt_text": "东花坊时雨.png",
+      "grade": 4
+    },
+    {
+      "name": "西福斯的月光.png",
+      "filename": "西福斯的月光.png",
+      "storage_path": "items/weapon/西福斯的月光.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d1/tgc0wwtcukbxy8q3sowun37n4et9fho.png",
+      "alt_text": "西福斯的月光.png",
+      "grade": 4
+    },
+    {
+      "name": "风信之锋.png",
+      "filename": "风信之锋.png",
+      "storage_path": "items/weapon/风信之锋.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c9/eyn2f5y5jkxwjw6eb87rmpv1ea9pose.png",
+      "alt_text": "风信之锋.png",
+      "grade": 4
+    },
+    {
+      "name": "流浪的晚星.png",
+      "filename": "流浪的晚星.png",
+      "storage_path": "items/weapon/流浪的晚星.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/84/enl7iak6z4p4lett8xwf7zhkxwyzxby.png",
+      "alt_text": "流浪的晚星.png",
+      "grade": 4
+    },
+    {
+      "name": "玛海菈的水色.png",
+      "filename": "玛海菈的水色.png",
+      "storage_path": "items/weapon/玛海菈的水色.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/0f/anoh0a2ndrq4iuxhtmcjrri33165n4v.png",
+      "alt_text": "玛海菈的水色.png",
+      "grade": 4
+    },
+    {
+      "name": "原木刀.png",
+      "filename": "原木刀.png",
+      "storage_path": "items/weapon/原木刀.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/49/r9ibrj3g5yzqec8f3ymxiw6sg9mrntd.png",
+      "alt_text": "原木刀.png",
+      "grade": 4
+    },
+    {
+      "name": "贯月矢.png",
+      "filename": "贯月矢.png",
+      "storage_path": "items/weapon/贯月矢.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b9/s7qocxbf763pg6au1x6epx4pm22vr9r.png",
+      "alt_text": "贯月矢.png",
+      "grade": 4
+    },
+    {
+      "name": "盈满之实.png",
+      "filename": "盈满之实.png",
+      "storage_path": "items/weapon/盈满之实.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/cd/0sw6m7f5rc45ryknd89k5yw9wxvjg9v.png",
+      "alt_text": "盈满之实.png",
+      "grade": 4
+    },
+    {
+      "name": "森林王器.png",
+      "filename": "森林王器.png",
+      "storage_path": "items/weapon/森林王器.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b0/1capo52qkoo0yeu1djmpj0g31ag7k4z.png",
+      "alt_text": "森林王器.png",
+      "grade": 4
+    },
+    {
+      "name": "王下近侍.png",
+      "filename": "王下近侍.png",
+      "storage_path": "items/weapon/王下近侍.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/8f/qok3iyhogwja8km8f6mxvt1wrsvneal.png",
+      "alt_text": "王下近侍.png",
+      "grade": 4
+    },
+    {
+      "name": "竭泽.png",
+      "filename": "竭泽.png",
+      "storage_path": "items/weapon/竭泽.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/67/h5i21t2g2n62m6zax4vkv4nu8yfk24k.png",
+      "alt_text": "竭泽.png",
+      "grade": 4
+    },
+    {
+      "name": "笼钓瓶一心.png",
+      "filename": "笼钓瓶一心.png",
+      "storage_path": "items/weapon/笼钓瓶一心.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/60/dgcvrkjcfs3iaob8kw61eg3bvshfp4z.png",
+      "alt_text": "笼钓瓶一心.png",
+      "grade": 4
+    },
+    {
+      "name": "落霞.png",
+      "filename": "落霞.png",
+      "storage_path": "items/weapon/落霞.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/81/gediyggl2thgj9wm8nf9oymdflomtc7.png",
+      "alt_text": "落霞.png",
+      "grade": 4
+    },
+    {
+      "name": "证誓之明瞳.png",
+      "filename": "证誓之明瞳.png",
+      "storage_path": "items/weapon/证誓之明瞳.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/04/gfrop4sutfitpg1ie8pz1eo7ooemrcn.png",
+      "alt_text": "证誓之明瞳.png",
+      "grade": 4
+    },
+    {
+      "name": "辰砂之纺锤.png",
+      "filename": "辰砂之纺锤.png",
+      "storage_path": "items/weapon/辰砂之纺锤.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/ba/rilaqrv0x0t8dt3ehgqimtp8ncgp941.png",
+      "alt_text": "辰砂之纺锤.png",
+      "grade": 4
+    },
+    {
+      "name": "断浪长鳍.png",
+      "filename": "断浪长鳍.png",
+      "storage_path": "items/weapon/断浪长鳍.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/13/iu6ewa4gmjv0krtkkuh07i3eowazy9i.png",
+      "alt_text": "断浪长鳍.png",
+      "grade": 4
+    },
+    {
+      "name": "曚云之月.png",
+      "filename": "曚云之月.png",
+      "storage_path": "items/weapon/曚云之月.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/8a/5uwhczptaxydt6t86gog4sgcwjw5jwf.png",
+      "alt_text": "曚云之月.png",
+      "grade": 4
+    },
+    {
+      "name": "恶王丸.png",
+      "filename": "恶王丸.png",
+      "storage_path": "items/weapon/恶王丸.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/2a/gftfk28thmd4w9nsyle85ondi9rtq6n.png",
+      "alt_text": "恶王丸.png",
+      "grade": 4
+    },
+    {
+      "name": "衔珠海皇.png",
+      "filename": "衔珠海皇.png",
+      "storage_path": "items/weapon/衔珠海皇.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/fb/930ty97yrmcqrz5oh5cykv8ms6a6hv9.png",
+      "alt_text": "衔珠海皇.png",
+      "grade": 4
+    },
+    {
+      "name": "「渔获」.png",
+      "filename": "渔获.png",
+      "storage_path": "items/weapon/渔获.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/2b/rbmrxt4t11u67sr50far44n8su5a0h7.png",
+      "alt_text": "「渔获」.png",
+      "grade": 4
+    },
+    {
+      "name": "掠食者.png",
+      "filename": "掠食者.png",
+      "storage_path": "items/weapon/掠食者.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/86/dpteyjptbn4lgnsr48jneoeneh096kb.png",
+      "alt_text": "掠食者.png",
+      "grade": 4
+    },
+    {
+      "name": "白辰之环.png",
+      "filename": "白辰之环.png",
+      "storage_path": "items/weapon/白辰之环.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a4/48ctquzv8v71zn053n89l43eahuoica.png",
+      "alt_text": "白辰之环.png",
+      "grade": 4
+    },
+    {
+      "name": "喜多院十文字.png",
+      "filename": "喜多院十文字.png",
+      "storage_path": "items/weapon/喜多院十文字.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/7a/ndxblaqimgtu2arafzv2zrjxmzptmcz.png",
+      "alt_text": "喜多院十文字.png",
+      "grade": 4
+    },
+    {
+      "name": "破魔之弓.png",
+      "filename": "破魔之弓.png",
+      "storage_path": "items/weapon/破魔之弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/95/fg7r5aov1jfstcpsokahqhzb1mxzsmv.png",
+      "alt_text": "破魔之弓.png",
+      "grade": 4
+    },
+    {
+      "name": "桂木斩长正.png",
+      "filename": "桂木斩长正.png",
+      "storage_path": "items/weapon/桂木斩长正.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b5/j3umncqaavs05j2kge17blv1cyjnr1a.png",
+      "alt_text": "桂木斩长正.png",
+      "grade": 4
+    },
+    {
+      "name": "天目影打刀.png",
+      "filename": "天目影打刀.png",
+      "storage_path": "items/weapon/天目影打刀.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/4b/ao0uepct6aszst6l97nbxmib6s5cx14.png",
+      "alt_text": "天目影打刀.png",
+      "grade": 4
+    },
+    {
+      "name": "幽夜华尔兹.png",
+      "filename": "幽夜华尔兹.png",
+      "storage_path": "items/weapon/幽夜华尔兹.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/0e/b5mx66j5mn9zt1rvw2le4getvtz8aw5.png",
+      "alt_text": "幽夜华尔兹.png",
+      "grade": 4
+    },
+    {
+      "name": "嘟嘟可故事集.png",
+      "filename": "嘟嘟可故事集.png",
+      "storage_path": "items/weapon/嘟嘟可故事集.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a9/to27idcbyyvjyozelpt281o2wqpkppu.png",
+      "alt_text": "嘟嘟可故事集.png",
+      "grade": 4
+    },
+    {
+      "name": "暗巷猎手.png",
+      "filename": "暗巷猎手.png",
+      "storage_path": "items/weapon/暗巷猎手.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/40/5ymxa0sdy5ymls5y9fj3zkej2d5mx6c.png",
+      "alt_text": "暗巷猎手.png",
+      "grade": 4
+    },
+    {
+      "name": "暗巷闪光.png",
+      "filename": "暗巷闪光.png",
+      "storage_path": "items/weapon/暗巷闪光.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/89/m0uex1u5qswbnpqebv75ppgf19dowrc.png",
+      "alt_text": "暗巷闪光.png",
+      "grade": 4
+    },
+    {
+      "name": "暗巷的酒与诗.png",
+      "filename": "暗巷的酒与诗.png",
+      "storage_path": "items/weapon/暗巷的酒与诗.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/1b/8p7ebo8ma61z683tkjnrvw2llmqnx6f.png",
+      "alt_text": "暗巷的酒与诗.png",
+      "grade": 4
+    },
+    {
+      "name": "风花之颂.png",
+      "filename": "风花之颂.png",
+      "storage_path": "items/weapon/风花之颂.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/4c/1anq6ld3vkvak7egwrw9cnmor6ed0t7.png",
+      "alt_text": "风花之颂.png",
+      "grade": 4
+    },
+    {
+      "name": "千岩长枪.png",
+      "filename": "千岩长枪.png",
+      "storage_path": "items/weapon/千岩长枪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b9/t90pbsrnnvhmrakx518y6v48buiwvf9.png",
+      "alt_text": "千岩长枪.png",
+      "grade": 4
+    },
+    {
+      "name": "千岩古剑.png",
+      "filename": "千岩古剑.png",
+      "storage_path": "items/weapon/千岩古剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c0/67h6ygjm57faxd8odp71kmi5kaqneuk.png",
+      "alt_text": "千岩古剑.png",
+      "grade": 4
+    },
+    {
+      "name": "腐殖之剑.png",
+      "filename": "腐殖之剑.png",
+      "storage_path": "items/weapon/腐殖之剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c2/qf4xr9irx3sj3mh2ohzihtwwhixo8h5.png",
+      "alt_text": "腐殖之剑.png",
+      "grade": 4
+    },
+    {
+      "name": "龙脊长枪.png",
+      "filename": "龙脊长枪.png",
+      "storage_path": "items/weapon/龙脊长枪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/f6/g0wtjxe5sk8el47lmax1ixuv862629y.png",
+      "alt_text": "龙脊长枪.png",
+      "grade": 4
+    },
+    {
+      "name": "雪葬的星银.png",
+      "filename": "雪葬的星银.png",
+      "storage_path": "items/weapon/雪葬的星银.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d9/okmj08vuwblqbc5hm8rc51hs14hkv0c.png",
+      "alt_text": "雪葬的星银.png",
+      "grade": 4  
+    },
+    {
+      "name": "忍冬之果.png",
+      "filename": "忍冬之果.png",
+      "storage_path": "items/weapon/忍冬之果.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/1e/0mqvavh1ryy2zpz6wt3apvph7ral6v7.png",
+      "alt_text": "忍冬之果.png",
+      "grade": 4
+    },
+    {
+      "name": "铁蜂刺.png",
+      "filename": "铁蜂刺.png",
+      "storage_path": "items/weapon/铁蜂刺.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/3b/ryh96u1cs5jcf2w02vbhtzw75lylc9m.png",
+      "alt_text": "铁蜂刺.png",
+      "grade": 4
+    },
+    {
+      "name": "钟剑.png",
+      "filename": "钟剑.png",
+      "storage_path": "items/weapon/钟剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/38/lz61cywx7g0x0gr5g9hmghz050h1h9o.png",
+      "alt_text": "钟剑.png",
+      "grade": 4
+    },
+    {
+      "name": "匣里灭辰.png",
+      "filename": "匣里灭辰.png",
+      "storage_path": "items/weapon/匣里灭辰.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/4a/oglqma2aqftd6cxts3i4mgnaddfxmob.png",
+      "alt_text": "匣里灭辰.png",
+      "grade": 4
+    },
+    {
+      "name": "螭骨剑.png",
+      "filename": "螭骨剑.png",
+      "storage_path": "items/weapon/螭骨剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/4c/a03ookbm5axi3xyxxdkr8g4ky0gw3fv.png",
+      "alt_text": "螭骨剑.png",
+      "grade": 4
+    },
+    {
+      "name": "雨裁.png",
+      "filename": "雨裁.png",
+      "storage_path": "items/weapon/雨裁.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c9/a2hgbmdegka66sycqn26nof7f5eggaa.png",
+      "alt_text": "雨裁.png",
+      "grade": 4
+    },
+    {
+      "name": "匣里龙吟.png",
+      "filename": "匣里龙吟.png",
+      "storage_path": "items/weapon/匣里龙吟.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b6/fnmxiyrh35272i8h9jydyqadyqkfw0e.png",
+      "alt_text": "匣里龙吟.png",
+      "grade": 4
+    },
+    {
+      "name": "流浪乐章.png",
+      "filename": "流浪乐章.png",
+      "storage_path": "items/weapon/流浪乐章.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/8b/1gfpyhq0horhcbho0eqs1c62nklx118.png",
+      "alt_text": "流浪乐章.png",
+      "grade": 4
+    },
+    {
+      "name": "万国诸海图谱.png",
+      "filename": "万国诸海图谱.png",
+      "storage_path": "items/weapon/万国诸海图谱.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b4/snhy06y9px3auxic0wbs7f1pxsme5w7.png",
+      "alt_text": "万国诸海图谱.png",
+      "grade": 4
+    },
+    {
+      "name": "祭礼剑.png",
+      "filename": "祭礼剑.png",
+      "storage_path": "items/weapon/祭礼剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a0/94o647bri6ccuviq733khmrzfekwixv.png",
+      "alt_text": "祭礼剑.png",
+      "grade": 4
+    },
+    {
+      "name": "祭礼残章.png",
+      "filename": "祭礼残章.png",
+      "storage_path": "items/weapon/祭礼残章.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/bf/eey13bo96c5di0j2wfhd6pq1dhsgk5r.png",
+      "alt_text": "祭礼残章.png",
+      "grade": 4
+    },
+    {
+      "name": "祭礼大剑.png",
+      "filename": "祭礼大剑.png",
+      "storage_path": "items/weapon/祭礼大剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d3/ph4fb03f9uc9jqek1u2li6si3bp9ep6.png",
+      "alt_text": "祭礼大剑.png",
+      "grade": 4
+    },
+    {
+      "name": "祭礼弓.png",
+      "filename": "祭礼弓.png",
+      "storage_path": "items/weapon/祭礼弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b2/2rec7q8fz258yn1ugmm13cojcx2cjdq.png",
+      "alt_text": "祭礼弓.png",
+      "grade": 4
+    },
+    {
+      "name": "匣里日月.png",
+      "filename": "匣里日月.png",
+      "storage_path": "items/weapon/匣里日月.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/ca/m9wcqu2irdto40c5byid1no15zouv2f.png",
+      "alt_text": "匣里日月.png",
+      "grade": 4
+    },
+    {
+      "name": "绝弦.png",
+      "filename": "绝弦.png",
+      "storage_path": "items/weapon/绝弦.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/66/1wlrzu80qe5jwzv9zxa9apuzkkt5m06.png",
+      "alt_text": "绝弦.png",
+      "grade": 4
+    },
+    {
+      "name": "试作澹月.png",
+      "filename": "试作澹月.png",
+      "storage_path": "items/weapon/试作澹月.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/ae/f7vngju0e5np72x0u4e49k847kme9u8.png",
+      "alt_text": "试作澹月.png",
+      "grade": 4
+    },
+    {
+      "name": "黑岩斩刀.png",
+      "filename": "黑岩斩刀.png",
+      "storage_path": "items/weapon/黑岩斩刀.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/44/buzpaggrxsisk8l4kiaz5zba19ug2e3.png",
+      "alt_text": "黑岩斩刀.png",
+      "grade": 4
+    },
+    {
+      "name": "黑岩绯玉.png",
+      "filename": "黑岩绯玉.png",
+      "storage_path": "items/weapon/黑岩绯玉.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/0e/mp51gft6okg6t4lcm3ro4um607612zn.png",
+      "alt_text": "黑岩绯玉.png",
+      "grade": 4
+    },
+    {
+      "name": "黑岩长剑.png",
+      "filename": "黑岩长剑.png",
+      "storage_path": "items/weapon/黑岩长剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/3b/sb1fghkah0hn4is9a3jmfhqkmslz44q.png",
+      "alt_text": "黑岩长剑.png",
+      "grade": 4
+    },
+    {
+      "name": "黑岩刺枪.png",
+      "filename": "黑岩刺枪.png",
+      "storage_path": "items/weapon/黑岩刺枪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/eb/essnw00jgeqt0be88db7hd1ttplrsse.png",
+      "alt_text": "黑岩刺枪.png",
+      "grade": 4
+    },
+    {
+      "name": "黑岩战弓.png",
+      "filename": "黑岩战弓.png",
+      "storage_path": "items/weapon/黑岩战弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/9e/2477l07lereuehc60ssgv4amlcjeayh.png",
+      "alt_text": "黑岩战弓.png",
+      "grade": 4
+    },
+    {
+      "name": "决斗之枪.png",
+      "filename": "决斗之枪.png",
+      "storage_path": "items/weapon/决斗之枪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/49/6kwk4rcg7hrag06ru43n001345slipa.png",
+      "alt_text": "决斗之枪.png",
+      "grade": 4
+    },
+    {
+      "name": "钢轮弓.png",
+      "filename": "钢轮弓.png",
+      "storage_path": "items/weapon/钢轮弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/7a/0z9oqbgp7xmufb10i51oopdi285ewfi.png",
+      "alt_text": "钢轮弓.png",
+      "grade": 4
+    },
+    {
+      "name": "试作斩岩.png",
+      "filename": "试作斩岩.png",
+      "storage_path": "items/weapon/试作斩岩.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/af/fq5reyiyfz37umtz3ngdue1pbtnbma6.png",
+      "alt_text": "试作斩岩.png",
+      "grade": 4
+    },
+    {
+      "name": "宗室秘法录.png",
+      "filename": "宗室秘法录.png",
+      "storage_path": "items/weapon/宗室秘法录.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/4d/0wxzvohfvm6tkkrh2mcr20ltefdtfvy.png",
+      "alt_text": "宗室秘法录.png",
+      "grade": 4
+    },
+    {
+      "name": "宗室大剑.png",
+      "filename": "宗室大剑.png",
+      "storage_path": "items/weapon/宗室大剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/1f/c6ruhw5q4szn19bem7bs12qvpvwu09e.png",
+      "alt_text": "宗室大剑.png",
+      "grade": 4
+    },
+    {
+      "name": "白影剑.png",
+      "filename": "白影剑.png",
+      "storage_path": "items/weapon/白影剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/28/jr9n32gce7t4mp4wngtilxpxesmhyvd.png",
+      "alt_text": "白影剑.png",
+      "grade": 4
+    },
+    {
+      "name": "宗室长剑.png",
+      "filename": "宗室长剑.png",
+      "storage_path": "items/weapon/宗室长剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/53/ei69kfgd5hcuplrcdlrkqp7corrp80j.png",
+      "alt_text": "宗室长剑.png", 
+      "grade": 4
+    },
+    {
+      "name": "笛剑.png",
+      "filename": "笛剑.png",
+      "storage_path": "items/weapon/笛剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/fd/5hbxsdik3322ar5z2d4s4qkj3gf8gnh.png",
+      "alt_text": "笛剑.png",
+      "grade": 4
+    },
+    {
+      "name": "试作星镰.png",
+      "filename": "试作星镰.png",
+      "storage_path": "items/weapon/试作星镰.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/7d/c08xuqa5babolxeza3469h0h6qakjsd.png",
+      "alt_text": "试作星镰.png",
+      "grade": 4
+    },
+    {
+      "name": "宗室猎枪.png",
+      "filename": "宗室猎枪.png",
+      "storage_path": "items/weapon/宗室猎枪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/2b/aqnkuo83r4dwbohss1f0ekumcyrwcm9.png",
+      "alt_text": "宗室猎枪.png",
+      "grade": 4
+    },
+    {
+      "name": "宗室长弓.png",
+      "filename": "宗室长弓.png",
+      "storage_path": "items/weapon/宗室长弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c6/ejsd6fjfdctyhkp0mc4jel6xr7037sv.png",
+      "alt_text": "宗室长弓.png",
+      "grade": 4
+    },
+    {
+      "name": "苍翠猎弓.png",
+      "filename": "苍翠猎弓.png",
+      "storage_path": "items/weapon/苍翠猎弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/77/7c6x3yu5fb0uj76cyuzf9vc0bdgk4h7.png",
+      "alt_text": "苍翠猎弓.png",
+      "grade": 4
+    },
+    {
+      "name": "降临之剑.png",
+      "filename": "降临之剑.png",
+      "storage_path": "items/weapon/降临之剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/7/74/3g8bzrgm3e8pl9sla0jmjtyg9jonk19.png",
+      "alt_text": "降临之剑.png",
+      "grade": 4
+    },
+    {
+      "name": "弓藏.png",
+      "filename": "弓藏.png",
+      "storage_path": "items/weapon/弓藏.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/88/jqv0wgqqrk8uzrl0bkjlm2z271r3wx6.png",
+      "alt_text": "弓藏.png",
+      "grade": 4
+    },
+    {
+      "name": "黑剑.png",
+      "filename": "黑剑.png",
+      "storage_path": "items/weapon/黑剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/4a/3ve4num887ksh8gqh12a5z2k0mmbegm.png",
+      "alt_text": "黑剑.png", 
+      "grade": 4
+    },
+    {
+      "name": "试作金珀.png",
+      "filename": "试作金珀.png",
+      "storage_path": "items/weapon/试作金珀.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/ac/p578m7ua6jzji5qhigdqmf3komz09zx.png",
+      "alt_text": "试作金珀.png",
+      "grade": 4
+    },
+    {
+      "name": "西风秘典.png",
+      "filename": "西风秘典.png",
+      "storage_path": "items/weapon/西风秘典.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/55/myxc1shaba3gaof6hxltjp9iqre47da.png",
+      "alt_text": "西风秘典.png",
+      "grade": 4
+    },
+    {
+      "name": "西风剑.png",
+      "filename": "西风剑.png",
+      "storage_path": "items/weapon/西风剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/6/6d/id86h90vm78lyntq48f46j4l47zdmxk.png",
+      "alt_text": "西风剑.png",
+      "grade": 4
+    },
+    {
+      "name": "西风猎弓.png",
+      "filename": "西风猎弓.png",
+      "storage_path": "items/weapon/西风猎弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/55/ptq434ipzu2tdibixc9u0of6h0sj5sm.png",
+      "alt_text": "西风猎弓.png",
+      "grade": 4
+    },
+    {
+      "name": "西风长枪.png",
+      "filename": "西风长枪.png",
+      "storage_path": "items/weapon/西风长枪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b9/iks26f9sp5okxrfkqwcad77wujwt9rm.png",
+      "alt_text": "西风长枪.png",
+      "grade": 4
+    },
+    {
+      "name": "西风大剑.png",
+      "filename": "西风大剑.png",
+      "storage_path": "items/weapon/西风大剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/8/85/ehb1s9y8ae4voq08ndoyauyn1tp9zqu.png",
+      "alt_text": "西风大剑.png",
+      "grade": 4
+    },
+    {
+      "name": "流月针.png",
+      "filename": "流月针.png",
+      "storage_path": "items/weapon/流月针.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/92/99k8uxhkckglspqsgvjhyppoc2vmbkv.png",
+      "alt_text": "流月针.png",
+      "grade": 4
+    },
+    {
+      "name": "昭心.png",
+      "filename": "昭心.png",
+      "storage_path": "items/weapon/昭心.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e9/bsmftbddqryi4mp9nwql8tvi5gh964k.png",
+      "alt_text": "昭心.png",
+      "grade": 4
+    },
+    {
+      "name": "试作古华.png",
+      "filename": "试作古华.png",
+      "storage_path": "items/weapon/试作古华.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/1c/gfejb3e6w0vqa659eckz1f7y9t3slyr.png",
+      "alt_text": "试作古华.png",
+      "grade": 4
+    },
+    {
+      "name": "冷刃.png",
+      "filename": "冷刃.png",
+      "storage_path": "items/weapon/冷刃.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/f3/c9f7m9klv0tqgad0t35l0v659dckl11.png",
+      "alt_text": "冷刃.png",
+      "grade": 4
+    },
+    {
+      "name": "神射手之誓.png",
+      "filename": "神射手之誓.png",
+      "storage_path": "items/weapon/神射手之誓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/3c/5nqr8ib8lef2mjjoccgsuej6y5ggd8y.png",
+      "alt_text": "神射手之誓.png",
+      "grade": 4
+    },
+    {
+      "name": "弹弓.png",
+      "filename": "弹弓.png",
+      "storage_path": "items/weapon/弹弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/2/2a/hz45wjba3c0oe62vs7gq1derhrfut39.png",
+      "alt_text": "弹弓.png",
+      "grade": 4
+    },
+    {
+      "name": "黑缨枪.png",
+      "filename": "黑缨枪.png",
+      "storage_path": "items/weapon/黑缨枪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/95/kjxqr03u3o59vqhd06q1dkr9udn4bzk.png",
+      "alt_text": "黑缨枪.png",
+      "grade": 4
+    },
+    {
+      "name": "沐浴龙血的剑.png",
+      "filename": "沐浴龙血的剑.png",
+      "storage_path": "items/weapon/沐浴龙血的剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/57/lpb3rsmenks3ej8qccdsmizgsf05amz.png",
+      "alt_text": "沐浴龙血的剑.png",
+      "grade": 3
+    },
+    {
+      "name": "鸦羽弓.png",
+      "filename": "鸦羽弓.png",
+      "storage_path": "items/weapon/鸦羽弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/05/53ipmiydm1223mgs1553tfvlusefx3g.png",
+      "alt_text": "鸦羽弓.png",
+      "grade": 3
+    },
+    {
+      "name": "魔导绪论.png",
+      "filename": "魔导绪论.png",
+      "storage_path": "items/weapon/魔导绪论.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/ae/7l0lp1uvwkjmj8g04eg59xy7nqhrgyd.png",
+      "alt_text": "魔导绪论.png",
+      "grade": 3
+    },
+    {
+      "name": "翡玉法球.png",
+      "filename": "翡玉法球.png",
+      "storage_path": "items/weapon/翡玉法球.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/46/1klq7fy01lhzlepa64rfu33hs4wwl0f.png",
+      "alt_text": "翡玉法球.png",
+      "grade": 3
+    },
+    {
+      "name": "暗铁剑.png",
+      "filename": "暗铁剑.png",
+      "storage_path": "items/weapon/暗铁剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/cf/3v77tnyk0f0gspfmk8ddlrj62um1i9z.png",
+      "alt_text": "暗铁剑.png",
+      "grade": 3
+    },
+    {
+      "name": "讨龙英杰谭.png",
+      "filename": "讨龙英杰谭.png",
+      "storage_path": "items/weapon/讨龙英杰谭.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e0/r009hx3olkmrtk1ykdlr5lvhc76j4iu.png",
+      "alt_text": "讨龙英杰谭.png",
+      "grade": 3
+    },
+    {
+      "name": "信使.png",
+      "filename": "信使.png",
+      "storage_path": "items/weapon/信使.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/b0/eiuwkzr42sxnwsdhx58m9nxg0lmjlpi.png",
+      "alt_text": "信使.png",
+      "grade": 3
+    },
+    {
+      "name": "白铁大剑.png",
+      "filename": "白铁大剑.png",
+      "storage_path": "items/weapon/白铁大剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/9f/9xw0ywermt7zniyxkkqgaflg4bspalf.png",
+      "alt_text": "白铁大剑.png",
+      "grade": 3
+    },
+    {
+      "name": "反曲弓.png",
+      "filename": "反曲弓.png",
+      "storage_path": "items/weapon/反曲弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/1/1c/037366z9oujt6dbi037os1ivao2lrsg.png",
+      "alt_text": "反曲弓.png",
+      "grade": 3
+    },
+    {
+      "name": "飞天大御剑.png",
+      "filename": "飞天大御剑.png",
+      "storage_path": "items/weapon/飞天大御剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/f/f8/77lbd8p046kafk44vvhvfbc9s14qweq.png",
+      "alt_text": "飞天大御剑.png",
+      "grade": 3
+    },
+    {
+      "name": "甲级宝珏.png",
+      "filename": "甲级宝珏.png",
+      "storage_path": "items/weapon/甲级宝珏.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d8/brcmqo7o8pw6xr5pq9ujz5kjug3xslp.png",
+      "alt_text": "甲级宝珏.png",
+      "grade": 3
+    },
+    {
+      "name": "飞天御剑.png",
+      "filename": "飞天御剑.png",
+      "storage_path": "items/weapon/飞天御剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/a4/ivbrml7lrzifbyiaj5h4rf7ra7mkio7.png",
+      "alt_text": "飞天御剑.png",
+      "grade": 3
+    },
+    {
+      "name": "白缨枪.png",
+      "filename": "白缨枪.png",
+      "storage_path": "items/weapon/白缨枪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/3a/mgdxazk35nyu792h4s1w8qikz11djjt.png",
+      "alt_text": "白缨枪.png",
+      "grade": 3
+    },
+    {
+      "name": "黎明神剑.png",
+      "filename": "黎明神剑.png",
+      "storage_path": "items/weapon/黎明神剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/94/p0mzw27obtfktcgzhwu3y4vnq8nn4vn.png",
+      "alt_text": "黎明神剑.png",
+      "grade": 3
+    },
+    {
+      "name": "旅行剑.png",
+      "filename": "旅行剑.png",
+      "storage_path": "items/weapon/旅行剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/4/44/ajkicxj5plmwi07n53ijymzl9zn70c9.png",
+      "alt_text": "旅行剑.png",
+      "grade": 3
+    },
+    {
+      "name": "异世界行记.png",
+      "filename": "异世界行记.png",
+      "storage_path": "items/weapon/异世界行记.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c3/9j2dbvbocavnm3ztyfmmw1y1cjxwz85.png",
+      "alt_text": "异世界行记.png",
+      "grade": 3
+    },
+    {
+      "name": "铁影阔剑.png",
+      "filename": "铁影阔剑.png",
+      "storage_path": "items/weapon/铁影阔剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/e/e4/5yi9lz2gqnfen8axz1s70zaebwu2yar.png",
+      "alt_text": "铁影阔剑.png",
+      "grade": 3
+    },
+    {
+      "name": "以理服人.png",
+      "filename": "以理服人.png",
+      "storage_path": "items/weapon/以理服人.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/3/3d/2c93huro1qmcsasdxh7fdpm9zhv1obt.png",
+      "alt_text": "以理服人.png",
+      "grade": 3
+    },
+    {
+      "name": "钺矛.png",
+      "filename": "钺矛.png",
+      "storage_path": "items/weapon/钺矛.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c7/bnxkv79cim47byqz0znf6wpvrxjiawz.png",
+      "alt_text": "钺矛.png",
+      "grade": 3
+    },
+    {
+      "name": "吃虎鱼刀.png",
+      "filename": "吃虎鱼刀.png",
+      "storage_path": "items/weapon/吃虎鱼刀.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/91/0nj68wmrj4lq5qo83ijiknlxrgjb2s3.png",
+      "alt_text": "吃虎鱼刀.png",
+      "grade": 3
+    },
+    {
+      "name": "铁尖枪.png",
+      "filename": "铁尖枪.png",
+      "storage_path": "items/weapon/铁尖枪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/53/8rxq05fk93j4o755v88489147205wuk.png",
+      "alt_text": "铁尖枪.png",
+      "grade": 2
+    },
+    {
+      "name": "银剑.png",
+      "filename": "银剑.png",
+      "storage_path": "items/weapon/银剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/a/ad/npev8zqms0tp09szd3ngkp2la2es15e.png",
+      "alt_text": "银剑.png",
+      "grade": 2
+    },
+    {
+      "name": "口袋魔导书.png",
+      "filename": "口袋魔导书.png",
+      "storage_path": "items/weapon/口袋魔导书.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/5/54/3cez0e67cnkft1idnofhpm59wbsk5md.png",
+      "alt_text": "口袋魔导书.png",
+      "grade": 2
+    },
+    {
+      "name": "历练的猎弓.png",
+      "filename": "历练的猎弓.png",
+      "storage_path": "items/weapon/历练的猎弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/9/90/orfj6o4jpkggxpu4j2994a3hc899pva.png",
+      "alt_text": "历练的猎弓.png",
+      "grade": 2
+    },
+    {
+      "name": "佣兵重剑.png",
+      "filename": "佣兵重剑.png",
+      "storage_path": "items/weapon/佣兵重剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/07/h54n8whizi54yvb3eqe8qewvcvwanty.png",
+      "alt_text": "佣兵重剑.png",
+      "grade": 2
+    },
+    {
+      "name": "学徒笔记.png",
+      "filename": "学徒笔记.png",
+      "storage_path": "items/weapon/学徒笔记.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/c/c5/igw6rxjhh72k7cha3wq5lrdr7mw636g.png",
+      "alt_text": "学徒笔记.png",
+      "grade": 1
+    },
+    {
+      "name": "无锋剑.png",
+      "filename": "无锋剑.png",
+      "storage_path": "items/weapon/无锋剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/0/0d/i5smc85ma234uzd3jzx3u9onhy28i94.png",
+      "alt_text": "无锋剑.png",
+      "grade": 3
+    },
+    {
+      "name": "猎弓.png",
+      "filename": "猎弓.png",
+      "storage_path": "items/weapon/猎弓.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/bf/6kl41yfn2o813n65owm00vjagyrskuq.png",
+      "alt_text": "猎弓.png",
+      "grade": 1
+    },
+    {
+      "name": "训练大剑.png",
+      "filename": "训练大剑.png",
+      "storage_path": "items/weapon/训练大剑.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/d/d5/nd5eugeofambx7ssbxk4ggnpv4af0vg.png",
+      "alt_text": "训练大剑.png",
+      "grade": 3
+    },
+    {
+      "name": "新手长枪.png",
+      "filename": "新手长枪.png",
+      "storage_path": "items/weapon/新手长枪.png",
+      "original_url": "https://patchwiki.biligame.com/images/ys/b/be/9zeqw9h2k2n3f32bllbknm5qo806bcl.png",
+      "alt_text": "新手长枪.png",
+      "grade": 1
+    }
+  ]
+}

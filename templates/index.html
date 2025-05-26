@@ -1,0 +1,86 @@
+{% extends "base.html" %}
+
+{% block title %}主页 - 抽卡系统{% endblock %}
+
+{% block content %}
+<div class="row justify-content-center">
+    <div class="col-md-8">
+        <div class="text-center">
+            <h1 class="display-4 mb-4">
+                <i class="bi bi-stars text-warning"></i>
+                欢迎来到抽卡系统
+            </h1>
+            <p class="lead text-muted mb-5">
+                体验精彩的抽卡游戏，收集各种珍稀角色和武器！
+            </p>
+            
+            {% if not session.user_id %}
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-person-plus-fill display-1 text-primary mb-3"></i>
+                            <h5 class="card-title">新用户注册</h5>
+                            <p class="card-text">创建账号开始你的抽卡之旅</p>
+                            <a href="{{ url_for('register') }}" class="btn btn-primary">
+                                <i class="bi bi-person-plus"></i> 立即注册
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <div class="card h-100">
+                        <div class="card-body text-center">
+                            <i class="bi bi-box-arrow-in-right display-1 text-success mb-3"></i>
+                            <h5 class="card-title">用户登录</h5>
+                            <p class="card-text">已有账号？请直接登录</p>
+                            <a href="{{ url_for('login') }}" class="btn btn-success">
+                                <i class="bi bi-box-arrow-in-right"></i> 立即登录
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            {% else %}
+            <div class="alert alert-info">
+                <i class="bi bi-info-circle"></i>
+                欢迎回来，{{ session.username }}！
+                <a href="{{ url_for('dashboard') }}" class="btn btn-outline-info ms-2">
+                    前往仪表板
+                </a>
+            </div>
+            {% endif %}
+        </div>
+        
+        <div class="row mt-5">
+            <div class="col-md-4 mb-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="bi bi-people-fill display-4 text-primary mb-3"></i>
+                        <h5 class="card-title">丰富角色</h5>
+                        <p class="card-text">收集各种稀有角色，构建最强阵容</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="bi bi-sword display-4 text-danger mb-3"></i>
+                        <h5 class="card-title">强力武器</h5>
+                        <p class="card-text">获得传说武器，提升战斗力</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4 mb-3">
+                <div class="card text-center">
+                    <div class="card-body">
+                        <i class="bi bi-trophy-fill display-4 text-warning mb-3"></i>
+                        <h5 class="card-title">精彩体验</h5>
+                        <p class="card-text">享受刺激的抽卡体验，记录每次收获</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock %} 
