@@ -68,11 +68,14 @@
 
 ```
 NUAA-Database-design/
-├── app.py                      # Flask主应用文件 (508行)
+├── app.py                      # Flask主应用文件 (586行)
 ├── db.sql                      # 数据库建表脚本
-├── pyproject.toml              # 项目依赖配置
-├── uv.lock                     # 依赖锁定文件
+├── sql_optimization.sql        # SQL性能优化脚本
+├── apply_optimization.py       # 一键应用优化工具
+├── test_performance.py         # 性能测试脚本
 ├── README.md                   # 项目说明文档
+├── 实验报告.md                 # 详细实验报告
+├── 项目完整文档.md             # 完整项目文档
 ├── LICENSE                     # 开源许可证
 ├── characters.json             # 角色数据 (97个角色)
 ├── weapons.json                # 武器数据 (201个武器)
@@ -88,7 +91,10 @@ NUAA-Database-design/
 │   └── items/                 # 道具图片资源
 │       ├── character/         # 角色图片
 │       └── weapon/            # 武器图片
-└── misc/                      # 其他文件
+└── misc/                      # 辅助文件
+    ├── createTables.sql       # 建表脚本
+    ├── insertData.sql         # 数据插入
+    └── process_images.py      # 图片处理
 ```
 
 ## 🗄️ 数据库设计
@@ -197,12 +203,21 @@ DB_CONFIG = {
 }
 ```
 
-### 5. 运行应用
+### 5. 应用性能优化（推荐）
+```bash
+# 应用SQL性能优化
+python apply_optimization.py
+
+# 验证优化效果（可选）
+python test_performance.py
+```
+
+### 6. 运行应用
 ```bash
 python app.py
 ```
 
-应用将在 http://localhost:5000 启动
+应用将在 http://localhost:5001 启动
 
 ## 📖 使用说明
 

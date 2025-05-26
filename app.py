@@ -187,34 +187,73 @@ def dashboard():
     
     try:
         with connection.cursor() as cursor:
-            # 获取用户抽卡统计
+            # 优化的用户抽卡统计查询
             cursor.execute("""
                 SELECT 
                     COUNT(*) as total_wishes,
-                    SUM(CASE WHEN w.Wtype = 0 THEN 1 ELSE 0 END) as character_wishes,
-                    SUM(CASE WHEN w.Wtype = 1 THEN 1 ELSE 0 END) as weapon_wishes
-                FROM wishes w 
-                WHERE w.Wuser = %s
+                    SUM(CASE WHEN Wtype = 0 THEN 1 ELSE 0 END) as character_wishes,
+                    SUM(CASE WHEN Wtype = 1 THEN 1 ELSE 0 END) as weapon_wishes
+                FROM wishes 
+                WHERE Wuser = %s
             """, (session['user_id'],))
             stats = cursor.fetchone()
             
-            # 获取最近的抽卡记录
+            # 优化的最近抽卡记录查询 - 使用覆盖索引避免JOIN
             cursor.execute("""
-                SELECT 
-                    w.Wtime,
-                    w.Wtype,
-                    c.Cname,
-                    c.Grade as CGrade,
-                    wp.Wname,
-                    wp.Grade as WGrade
-                FROM wishes w
-                LEFT JOIN characters c ON w.Wcharacter = c.Cno
-                LEFT JOIN weapons wp ON w.Wweapon = wp.Wno
-                WHERE w.Wuser = %s
-                ORDER BY w.Wtime DESC
+                SELECT Wtime, Wtype, Wcharacter, Wweapon
+                FROM wishes 
+                WHERE Wuser = %s
+                ORDER BY Wtime DESC
                 LIMIT 10
             """, (session['user_id'],))
-            recent_wishes = cursor.fetchall()
+            wishes_data = cursor.fetchall()
+            
+            # 批量获取角色和武器信息
+            recent_wishes = []
+            if wishes_data:
+                character_ids = [w['Wcharacter'] for w in wishes_data if w['Wcharacter']]
+                weapon_ids = [w['Wweapon'] for w in wishes_data if w['Wweapon']]
+                
+                characters = {}
+                weapons = {}
+                
+                if character_ids:
+                    cursor.execute("""
+                        SELECT Cno, Cname, Grade 
+                        FROM characters 
+                        WHERE Cno IN ({})
+                    """.format(','.join(['%s'] * len(character_ids))), character_ids)
+                    characters = {c['Cno']: c for c in cursor.fetchall()}
+                
+                if weapon_ids:
+                    cursor.execute("""
+                        SELECT Wno, Wname, Grade 
+                        FROM weapons 
+                        WHERE Wno IN ({})
+                    """.format(','.join(['%s'] * len(weapon_ids))), weapon_ids)
+                    weapons = {w['Wno']: w for w in cursor.fetchall()}
+                
+                # 组装结果
+                for wish in wishes_data:
+                    wish_data = {
+                        'Wtime': wish['Wtime'],
+                        'Wtype': wish['Wtype'],
+                        'Cname': None,
+                        'CGrade': None,
+                        'Wname': None,
+                        'WGrade': None
+                    }
+                    
+                    if wish['Wtype'] == 0 and wish['Wcharacter'] in characters:
+                        char = characters[wish['Wcharacter']]
+                        wish_data['Cname'] = char['Cname']
+                        wish_data['CGrade'] = char['Grade']
+                    elif wish['Wtype'] == 1 and wish['Wweapon'] in weapons:
+                        weapon = weapons[wish['Wweapon']]
+                        wish_data['Wname'] = weapon['Wname']
+                        wish_data['WGrade'] = weapon['Grade']
+                    
+                    recent_wishes.append(wish_data)
             
     except Exception as e:
         flash(f'获取数据失败: {str(e)}', 'error')
@@ -461,23 +500,62 @@ def history():
             cursor.execute("SELECT COUNT(*) as total FROM wishes WHERE Wuser = %s", (session['user_id'],))
             total = cursor.fetchone()['total']
             
-            # 获取分页数据
+            # 优化的分页查询 - 使用覆盖索引避免JOIN
             cursor.execute("""
-                SELECT 
-                    w.Wtime,
-                    w.Wtype,
-                    c.Cname,
-                    c.Grade as CGrade,
-                    wp.Wname,
-                    wp.Grade as WGrade
-                FROM wishes w
-                LEFT JOIN characters c ON w.Wcharacter = c.Cno
-                LEFT JOIN weapons wp ON w.Wweapon = wp.Wno
-                WHERE w.Wuser = %s
-                ORDER BY w.Wtime DESC
+                SELECT Wtime, Wtype, Wcharacter, Wweapon
+                FROM wishes 
+                WHERE Wuser = %s
+                ORDER BY Wtime DESC
                 LIMIT %s OFFSET %s
             """, (session['user_id'], per_page, offset))
-            wishes = cursor.fetchall()
+            wishes_data = cursor.fetchall()
+            
+            # 批量获取角色和武器信息
+            wishes = []
+            if wishes_data:
+                character_ids = [w['Wcharacter'] for w in wishes_data if w['Wcharacter']]
+                weapon_ids = [w['Wweapon'] for w in wishes_data if w['Wweapon']]
+                
+                characters = {}
+                weapons = {}
+                
+                if character_ids:
+                    cursor.execute("""
+                        SELECT Cno, Cname, Grade 
+                        FROM characters 
+                        WHERE Cno IN ({})
+                    """.format(','.join(['%s'] * len(character_ids))), character_ids)
+                    characters = {c['Cno']: c for c in cursor.fetchall()}
+                
+                if weapon_ids:
+                    cursor.execute("""
+                        SELECT Wno, Wname, Grade 
+                        FROM weapons 
+                        WHERE Wno IN ({})
+                    """.format(','.join(['%s'] * len(weapon_ids))), weapon_ids)
+                    weapons = {w['Wno']: w for w in cursor.fetchall()}
+                
+                # 组装结果
+                for wish in wishes_data:
+                    wish_data = {
+                        'Wtime': wish['Wtime'],
+                        'Wtype': wish['Wtype'],
+                        'Cname': None,
+                        'CGrade': None,
+                        'Wname': None,
+                        'WGrade': None
+                    }
+                    
+                    if wish['Wtype'] == 0 and wish['Wcharacter'] in characters:
+                        char = characters[wish['Wcharacter']]
+                        wish_data['Cname'] = char['Cname']
+                        wish_data['CGrade'] = char['Grade']
+                    elif wish['Wtype'] == 1 and wish['Wweapon'] in weapons:
+                        weapon = weapons[wish['Wweapon']]
+                        wish_data['Wname'] = weapon['Wname']
+                        wish_data['WGrade'] = weapon['Grade']
+                    
+                    wishes.append(wish_data)
             
             # 计算分页信息
             total_pages = (total + per_page - 1) // per_page

@@ -1,7 +1,106 @@
-.idea
-.vscode
-.venv
-.cache
-.DS_Store
+# IDE和编辑器
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
 
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+MANIFEST
+
+# 虚拟环境
+.env
+.venv
+env/
+venv/
+ENV/
+env.bak/
+venv.bak/
+
+# 缓存和临时文件
+.cache/
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.nox/
+.coverage.*
+.cache
+nosetests.xml
+coverage.xml
+*.cover
+.hypothesis/
+
+# 系统文件
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+ehthumbs.db
+Thumbs.db
+
+# 日志文件
+*.log
+logs/
+
+# 数据库
+*.db
+*.sqlite
+*.sqlite3
+
+# 配置文件（可能包含敏感信息）
+config.py
+.env.local
+.env.production
+
+# 上传文件
+uploads/
+media/
+
+# 备份文件
+*.bak
+*.backup
+*.old
+
+# 编译文件
+*.pyc
+*.pyo
+*.pyd
 __pycache__
+
+# 测试文件
+.pytest_cache
+.coverage
+htmlcov
+
+# 文档生成
+docs/_build/
+
+# 其他
+.mypy_cache/
+.dmypy.json
+dmypy.json
+
+# 测试文件
+test_*
