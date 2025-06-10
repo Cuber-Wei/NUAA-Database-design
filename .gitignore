@@ -4,6 +4,7 @@
 *.swp
 *.swo
 *~
+.ruff_cache/
 
 # Python
 __pycache__/
@@ -105,3 +106,5 @@ dmypy.json
 
 # 测试文件
 test_*
+*_test.py
+SQL*.md
