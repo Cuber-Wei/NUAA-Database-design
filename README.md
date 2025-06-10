@@ -54,9 +54,6 @@
 - **Web框架**：Flask 3.1.1
 - **数据库**：MySQL 8.0+
 - **数据库连接**：PyMySQL 1.1.1
-- **图像处理**：Pillow 11.2.1
-- **网络请求**：Requests 2.32.3
-- **HTML解析**：BeautifulSoup4 4.13.4
 
 ### 前端技术
 - **UI框架**：Bootstrap 5.1.3
@@ -73,36 +70,43 @@
 
 ```
 NUAA-Database-design/
-├── app.py                      # Flask主应用文件 (586行)
-├── db.sql                      # 数据库建表脚本
-├── sql_optimization.sql        # SQL性能优化脚本
-├── apply_optimization.py       # 一键应用优化工具
-├── test_performance.py         # 性能测试脚本
-├── security.py                 # SQL注入防护模块
-├── test_security.py            # 安全功能测试脚本
-├── SQL注入防护说明.md          # 安全功能详细说明
-├── README.md                   # 项目说明文档
-├── 实验报告.md                 # 详细实验报告
-├── 项目完整文档.md             # 完整项目文档
-├── LICENSE                     # 开源许可证
-├── characters.json             # 角色数据 (97个角色)
-├── weapons.json                # 武器数据 (201个武器)
-├── templates/                  # HTML模板文件
-│   ├── base.html              # 基础模板
-│   ├── index.html             # 主页
-│   ├── login.html             # 登录页面
-│   ├── register.html          # 注册页面
-│   ├── dashboard.html         # 用户仪表板
-│   ├── wish.html              # 抽卡页面
-│   └── history.html           # 抽卡记录页面
-├── static/                     # 静态资源文件
-│   └── items/                 # 道具图片资源
-│       ├── character/         # 角色图片
-│       └── weapon/            # 武器图片
-└── misc/                      # 辅助文件
-    ├── createTables.sql       # 建表脚本
-    ├── insertData.sql         # 数据插入
-    └── process_images.py      # 图片处理
+├── README.md
+├── app.py
+├── db.sql
+├── insert_data.sql
+├── user_info_view_examples.sql
+├── misc
+│   ├── alterTable.sql
+│   ├── createTables.sql
+│   ├── insertData.sql
+│   ├── Lab2.sql
+│   ├── Lab3.sql
+│   ├── Lab4.sql
+│   ├── Lab5.sql
+│   ├── process_images.py
+│   └── spyder.py
+├── security.py
+├── static
+│   ├── css
+│   ├── items
+│   │   ├── character
+│   │   ├── decorations
+│   │   ├── misc
+│   │   └── weapon
+│   └── js
+├── templates
+│   ├── base.html
+│   ├── dashboard.html
+│   ├── history.html
+│   ├── index.html
+│   ├── login.html
+│   ├── register.html
+│   └── wish.html
+├── pyproject.toml
+├── uv.lock
+├── LICENSE
+├── 课程设计文档.md
+└── 原神抽卡系统 - 数据库课程设计文档.md
 ```
 
 ## 🗄️ 数据库设计
@@ -174,7 +178,7 @@ CREATE TABLE wishes (
 ```bash
 # 确保已安装Python 3.13+和MySQL 8.0+
 # 克隆项目
-git clone <repository-url>
+git clone https://github.com/Cuber-Wei/NUAA-Database-design.git
 cd NUAA-Database-design
 ```
 
@@ -184,7 +188,7 @@ cd NUAA-Database-design
 uv sync
 
 # 或使用pip
-pip install flask pymysql pillow requests beautifulsoup4
+pip install flask pymysql requests beautifulsoup4
 ```
 
 ### 3. 数据库配置
@@ -211,19 +215,7 @@ DB_CONFIG = {
 }
 ```
 
-### 5. 应用性能优化（推荐）
-```bash
-# 应用SQL性能优化
-python apply_optimization.py
-
-# 验证优化效果（可选）
-python test_performance.py
-
-# 测试安全防护功能（可选）
-python test_security.py
-```
-
-### 6. 运行应用
+### 5. 运行应用
 ```bash
 python app.py
 ```
@@ -359,4 +351,6 @@ def calculate_wish_result(current_4star_pity, current_5star_pity):
 
 ---
 
-**注意**：本项目为数据库课程设计作品，展示了完整的Web应用开发流程，包括数据库设计、后端开发、前端实现和用户体验优化。
+**项目地址**: [https://github.com/Cuber-Wei/NUAA-Database-design](https://github.com/Cuber-Wei/NUAA-Database-design)
+
+**在线演示**: [https://dbdesign.l0v3ch4n.top](https://dbdesign.l0v3ch4n.top)
